@@ -10,7 +10,7 @@ import RevealOnScroll from '@/components/RevealOnScroll.vue'
   >
     <div class="absolute inset-0 -z-10 bg-taupe-800">
       <div
-        class="absolute inset-0 bg-[url('/hero-header.jpg')] bg-cover bg-center opacity-70"
+        class="absolute inset-0 bg-[url('/hero-header_original.jpg')] bg-cover bg-center opacity-70"
         aria-hidden="true"
       />
       <div
@@ -19,12 +19,8 @@ import RevealOnScroll from '@/components/RevealOnScroll.vue'
       />
     </div>
 
-    <div class="container-page py-20 sm:py-28">
+    <div class="container-page py-16 sm:py-24">
       <RevealOnScroll :y-offset="16">
-        <p class="mb-6 text-xs font-semibold tracking-[0.32em] text-sand-100/80">
-          REIKI · BEWUSSTSEINSARBEIT · OFFENE BEGEGNUNGEN
-        </p>
-
         <!-- <h1
           class="max-w-4xl font-serif text-4xl font-semibold leading-[1.06] tracking-tight text-sand-50 sm:text-6xl"
         >

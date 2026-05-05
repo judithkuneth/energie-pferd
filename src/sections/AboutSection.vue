@@ -32,7 +32,7 @@ const stopStyles = [
 <template>
   <section
     id="ueber-mich"
-    class="relative pb-14 pt-14 sm:pb-16 sm:pt-20"
+    class="relative mt-6 pb-10 pt-12 sm:mt-10 sm:pb-12 sm:pt-16"
   >
     <div class="container-page">
       <RevealOnScroll
@@ -55,14 +55,32 @@ const stopStyles = [
         <!-- <p class="text-base leading-loose text-taupe-700 sm:text-xl sm:leading-loose">
           Meine Arbeit verbindet die Präsenz der Pferde mit ganzheitlicher Begleitung – vom Fühlen
           zum Tun, von Innen nach Außen. Denn echte Veränderung entsteht nicht im Verstehen allein,
-          sondern dort, wo das Erkannte im Körper ankommt und gelebt wird.
+          sondern dort, wo das Erkannte im Körper ankommt und gelebt wird. Denn wahres
+          Wachstum endet nicht beim Verstehen – deine neue Wahrheit will gelebt werden.
         </p> -->
-        <p class="text-base leading-loose text-taupe-700 sm:text-xl sm:leading-loose">
-          Meine Arbeit verbindet die Präsenz der Pferde mit ganzheitlicher Begleitung. Denn die
-          Pferde zeigen nicht nur auf – sie fordern dich auf, das Erkannte so zu verkörpern, dass es
-          in deinem Alltag lebendig wird. Lass dich von ihnen führen – in dein eigenes
-          Gleichgewicht, in deine Klarheit, in deine Größe.
-        </p>
+        <div class="grid gap-6 md:grid-cols-12 md:items-center">
+          <p
+            class="text-base leading-loose text-taupe-700 sm:text-xl sm:leading-loose md:col-span-7"
+          >
+            Gemeinsam mit den Pferden begleite ich dich durch das, was sich gerade zeigen will. Hier
+            darfst du wahrnehmen, erkennen und wachsen. Denn deine wahre Größe will nicht nur
+            erkannt, sondern gelebt werden.
+          </p>
+
+          <RevealOnScroll
+            as="figure"
+            :delay-ms="120"
+            class="card-surface overflow-hidden md:col-span-5"
+          >
+            <img
+              src="/IMG-20250501-WA0008.jpg"
+              alt="Führung und Verbindung mit dem Pferd in der Natur."
+              class="h-[18rem] w-full object-cover sm:h-[22rem] md:h-[20rem]"
+              loading="lazy"
+              decoding="async"
+            />
+          </RevealOnScroll>
+        </div>
       </RevealOnScroll>
     </div>
   </section>

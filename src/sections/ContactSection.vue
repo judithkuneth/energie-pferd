@@ -1,71 +1,102 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
 import RevealOnScroll from '@/components/RevealOnScroll.vue'
 
-const email = 'hello@energie-pferd.de'
-const instagramUrl = 'https://instagram.com/energie.pferd'
-
-const name = ref('')
-const contact = ref('')
-const message = ref('')
-const topic = ref('Session anfragen')
-
-const mailtoHref = computed(() => {
-  const subject = encodeURIComponent(`Energie Pferd – ${topic.value}`)
-  const body = encodeURIComponent(
-    `Name: ${name.value}\nKontakt: ${contact.value}\n\nNachricht:\n${message.value}\n`,
-  )
-  return `mailto:${email}?subject=${subject}&body=${body}`
-})
-
-function onSubmit() {
-  window.location.href = mailtoHref.value
-}
+const email = 'judith.kuneth@gmail.com'
+const instagramUrl = 'https://instagram.com/judith.energie.pferd'
+const phoneNumberRaw = '+43 676 83555785'
+const whatsappNumber = phoneNumberRaw.replace(/\D/g, '')
+const whatsappUrl = `https://wa.me/${whatsappNumber}`
 </script>
 
 <template>
-  <section id="kontakt" class="py-16 sm:py-24">
+  <section
+    id="kontakt"
+    class="py-12 sm:py-16"
+  >
     <div class="container-page">
-      <div class="grid gap-12 lg:grid-cols-12">
-        <RevealOnScroll as="div" class="lg:col-span-5">
-          <p class="text-xs font-semibold tracking-[0.28em] text-taupe-600">KONTAKT · BUCHUNG</p>
-          <h2 class="mt-4 font-serif text-3xl font-semibold tracking-tight text-taupe-900 sm:text-4xl">
-            Beginne deine Reise.
+      <div class="relative mx-auto max-w-3xl">
+        <div
+          class="pointer-events-none absolute inset-x-0 -top-10 -z-10 mx-auto h-56 max-w-2xl rounded-full bg-gradient-to-r from-gold-200/30 via-sand-100/55 to-rose-200/25 blur-3xl"
+          aria-hidden="true"
+        />
+        <RevealOnScroll
+          as="div"
+          class="text-center"
+        >
+          <figure class="mx-auto mb-6 w-fit">
+            <div class="card-surface overflow-hidden rounded-full p-1">
+              <img
+                src="/IMG_20260324_094424.jpg"
+                alt="Portrait in der Natur."
+                class="h-32 w-32 rounded-full object-cover sm:h-36 sm:w-36"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </figure>
+
+          <p class="text-xs font-semibold tracking-[0.28em] text-taupe-600">KONTAKT</p>
+          <h2
+            class="mt-4 font-serif text-3xl font-semibold tracking-tight text-taupe-900 sm:text-4xl"
+          >
+            Schön, dass du da bist!
           </h2>
           <p class="mt-5 text-sm leading-relaxed text-taupe-700">
-            Schreib mir ein paar Zeilen – ganz unverbindlich. Ich melde mich zeitnah mit einem Vorschlag
-            für den nächsten Schritt.
+            Schreib mir ein paar Zeilen – ganz unverbindlich. Ich melde mich zeitnah mit einem
+            Vorschlag für den nächsten Schritt.
           </p>
 
-          <div class="mt-8 space-y-4 text-sm">
+          <div class="mx-auto mt-10 max-w-xl space-y-4 text-sm">
             <div class="hairline" />
             <div class="flex flex-col gap-3">
               <a
-                class="inline-flex items-center justify-between rounded-xl border border-taupe-200/60 bg-white/60 px-4 py-3 font-medium text-taupe-900 no-underline transition hover:bg-white"
+                class="inline-flex items-center justify-between gap-4 rounded-xl border border-taupe-200/60 bg-white/60 px-4 py-3 font-medium text-taupe-900 no-underline transition hover:border-primary-500/45 hover:ring-2 hover:ring-primary-500/20"
                 :href="`mailto:${email}`"
               >
                 <span>E‑Mail</span>
-                <span class="text-taupe-700">{{ email }}</span>
+                <span class="truncate text-taupe-700">{{ email }}</span>
               </a>
               <a
-                class="inline-flex items-center justify-between rounded-xl border border-taupe-200/60 bg-white/60 px-4 py-3 font-medium text-taupe-900 no-underline transition hover:bg-white"
+                class="inline-flex items-center justify-between gap-4 rounded-xl border border-taupe-200/60 bg-white/60 px-4 py-3 font-medium text-taupe-900 no-underline transition hover:border-primary-500/45 hover:ring-2 hover:ring-primary-500/20"
+                :href="whatsappUrl"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>WhatsApp</span>
+                <span class="text-taupe-700">{{ phoneNumberRaw }}</span>
+              </a>
+              <a
+                class="inline-flex items-center justify-between gap-4 rounded-xl border border-taupe-200/60 bg-white/60 px-4 py-3 font-medium text-taupe-900 no-underline transition hover:border-primary-500/45 hover:ring-2 hover:ring-primary-500/20"
                 :href="instagramUrl"
                 target="_blank"
                 rel="noopener"
               >
                 <span>Instagram</span>
-                <span class="text-taupe-700">@energie.pferd</span>
+                <span class="text-taupe-700">@judith.energie.pferd</span>
               </a>
             </div>
           </div>
         </RevealOnScroll>
 
-        <RevealOnScroll as="div" :delay-ms="120" class="lg:col-span-7">
+        <!--
+        <RevealOnScroll
+          as="div"
+          :delay-ms="120"
+          class="lg:col-span-7"
+        >
           <div class="card-surface p-6 sm:p-8">
-            <form class="grid gap-5" @submit.prevent="onSubmit" aria-label="Kontaktformular">
+            <form
+              class="grid gap-5"
+              @submit.prevent="onSubmit"
+              aria-label="Kontaktformular"
+            >
               <div class="grid gap-4 sm:grid-cols-2">
                 <div class="grid gap-2">
-                  <label class="text-sm font-medium text-taupe-900" for="name">Name</label>
+                  <label
+                    class="text-sm font-medium text-taupe-900"
+                    for="name"
+                    >Name</label
+                  >
                   <input
                     id="name"
                     v-model="name"
@@ -74,10 +105,14 @@ function onSubmit() {
                     autocomplete="name"
                     placeholder="Dein Name"
                     required
-                  >
+                  />
                 </div>
                 <div class="grid gap-2">
-                  <label class="text-sm font-medium text-taupe-900" for="contact">E‑Mail oder Telefon</label>
+                  <label
+                    class="text-sm font-medium text-taupe-900"
+                    for="contact"
+                    >E‑Mail oder Telefon</label
+                  >
                   <input
                     id="contact"
                     v-model="contact"
@@ -86,12 +121,16 @@ function onSubmit() {
                     autocomplete="email"
                     placeholder="z. B. name@mail.de"
                     required
-                  >
+                  />
                 </div>
               </div>
 
               <div class="grid gap-2">
-                <label class="text-sm font-medium text-taupe-900" for="topic">Worum geht’s?</label>
+                <label
+                  class="text-sm font-medium text-taupe-900"
+                  for="topic"
+                  >Worum geht’s?</label
+                >
                 <select
                   id="topic"
                   v-model="topic"
@@ -106,7 +145,11 @@ function onSubmit() {
               </div>
 
               <div class="grid gap-2">
-                <label class="text-sm font-medium text-taupe-900" for="message">Nachricht</label>
+                <label
+                  class="text-sm font-medium text-taupe-900"
+                  for="message"
+                  >Nachricht</label
+                >
                 <textarea
                   id="message"
                   v-model="message"
@@ -130,8 +173,8 @@ function onSubmit() {
             </form>
           </div>
         </RevealOnScroll>
+        -->
       </div>
     </div>
   </section>
 </template>
-

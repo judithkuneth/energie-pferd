@@ -4,9 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: {
+          500: '#00917d',
+          600: '#007a69',
+        },
         sand: {
-          50: '#fbfaf7',
-          100: '#f6f2e8',
+          50: '#fcf7ef',
+          100: '#f7efe2',
           200: '#efe6d4',
           300: '#e5d4b6',
           400: '#d6bb90',

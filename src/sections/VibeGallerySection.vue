@@ -19,7 +19,7 @@ const images: VibeImage[] = [
 <template>
   <section
     id="vibe"
-    class="py-14 sm:py-20"
+    class="py-12 sm:py-16"
   >
     <div class="container-page">
       <RevealOnScroll
@@ -31,14 +31,11 @@ const images: VibeImage[] = [
         >
           Dieser Raum ist für Dich
         </h2>
-        <!-- <p class="mt-4 text-sm leading-relaxed text-taupe-700">
-          Ich lade dich ein in Verbindung zu treten – mit deinem Körper, deinen Gefühlen und deiner
-          inneren Wahrheit. Pferde sind dabei einzigartige Begleiter. Sie spiegeln unsere Präsenz.
-          Sie spüren was wir in uns tragen. Und sie laden uns ein, uns selbst zu begegnen.
-        </p> -->
-        <p class="mt-4 text-sm leading-relaxed text-taupe-700">
-          Ich lade dich ein in Verbindung zu treten – mit deinem Körper, deinen Gefühlen und deiner
-          inneren Wahrheit. Komm so, wie du bist – wir beginnen dort, wo du gerade stehst.
+
+        <p class="mt-4 text-lg leading-relaxed text-taupe-700">
+          Ob du Kraft schöpfen willst, Klarheit suchst oder einen Schritt wagen magst – vielleicht
+          bist du auch einfach neugierig. Komm so, wie du bist – wir beginnen dort, wo du gerade
+          stehst.
         </p>
       </RevealOnScroll>
 

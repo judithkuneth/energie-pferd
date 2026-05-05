@@ -10,8 +10,8 @@ withDefaults(
   }>(),
   {
     variant: 'primary',
-    target: '_self',
-  },
+    target: '_self'
+  }
 )
 </script>
 
@@ -24,7 +24,7 @@ withDefaults(
     class="inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-medium tracking-wide transition active:translate-y-px"
     :class="
       variant === 'primary'
-        ? 'shadow-glow bg-taupe-800 text-sand-50 hover:bg-taupe-700'
+        ? 'bg-primary-500 text-sand-50 hover:bg-primary-600'
         : 'border border-taupe-300/70 bg-white/60 text-taupe-900 hover:bg-white'
     "
   >
@@ -36,11 +36,10 @@ withDefaults(
     class="inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-medium tracking-wide transition active:translate-y-px"
     :class="
       variant === 'primary'
-        ? 'shadow-glow bg-taupe-800 text-sand-50 hover:bg-taupe-700'
+        ? 'bg-primary-500 text-sand-50 hover:bg-primary-600'
         : 'border border-taupe-300/70 bg-white/60 text-taupe-900 hover:bg-white'
     "
   >
     <slot />
   </button>
 </template>
-

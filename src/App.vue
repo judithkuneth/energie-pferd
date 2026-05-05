@@ -28,8 +28,8 @@ import SiteFooter from '@/sections/SiteFooter.vue'
       <!-- <HeroInterludeImage /> -->
       <VibeGallerySection />
       <OffersSection />
-      <PhilosophySection />
-      <TestimonialsSection />
+      <!-- <PhilosophySection /> -->
+      <!-- <TestimonialsSection /> -->
       <ContactSection />
     </main>
 
