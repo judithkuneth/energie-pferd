@@ -26,7 +26,9 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`
           <figure class="mx-auto mb-6 w-fit">
             <div class="card-surface overflow-hidden rounded-full p-1">
               <img
-                src="/IMG_20260324_094424.jpg"
+                src="/optimized/portrait-320.jpg"
+                srcset="/optimized/portrait-320.jpg 320w, /optimized/portrait-480.jpg 480w"
+                sizes="9rem"
                 alt="Portrait in der Natur."
                 class="h-32 w-32 rounded-full object-cover sm:h-36 sm:w-36"
                 loading="lazy"

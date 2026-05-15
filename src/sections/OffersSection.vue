@@ -16,6 +16,15 @@ const offers: Offer[] = [
       'Energetische Behandlung in Präsenz der Pferde – für Regulation, Klarheit und tiefe Rückverbindung.',
     note: 'Sanft · geerdet · berührend',
     impressions: [
+      { src: '/reiki-session-pasture-horses.jpg', alt: 'Reiki Impression - Pferde im offenen Raum.' },
+      { src: '/reiki-horse-treatment-close.jpg', alt: 'Reiki Impression - ruhige Behandlung mit Pferd.' },
+      { src: '/reiki-horse-connection-table.jpg', alt: 'Reiki Impression - Verbindung am Behandlungstisch.' },
+      { src: '/reiki-horse-calm-touch.jpg', alt: 'Reiki Impression - sanfte Beruehrung mit Pferd.' },
+      { src: '/reiki-resting-with-horse-sunlight.jpg', alt: 'Reiki Impression - Ruhe im Sonnenlicht.' },
+      { src: '/reiki-client-with-horse-table.jpg', alt: 'Reiki Impression - Pferd begleitet die Session.' },
+      { src: '/reiki-client-resting-between-horses.jpg', alt: 'Reiki Impression - Ruhen zwischen Pferden.' },
+      { src: '/reiki-pony-close-resting-client.jpg', alt: 'Reiki Impression - Pony in stiller Naehe.' },
+      { src: '/reiki-client-resting-horse-pony.jpg', alt: 'Reiki Impression - Pferd und Pony begleiten Reiki.' },
       // { src: '/IMG_20260503_114234.jpg', alt: 'Impression – ruhige Begegnung mit dem Pferd.' },
       // { src: '/vibe2.jpg', alt: 'Impression – Nähe und Verbindung.' },
       // { src: '/vibe.jpg', alt: 'Impression – Naturmoment.' }
@@ -73,6 +82,95 @@ const offers: Offer[] = [
     ]
   }
 ]
+
+const modalImageSizes = '(min-width: 1024px) 280px, (min-width: 640px) 45vw, calc(100vw - 4rem)'
+const optimizedImpressions: Record<string, { src: string; srcset: string }> = {
+  '/reiki-session-pasture-horses.jpg': {
+    src: '/optimized/reiki-session-pasture-horses-960.jpg',
+    srcset:
+      '/optimized/reiki-session-pasture-horses-480.jpg 480w, /optimized/reiki-session-pasture-horses-960.jpg 960w'
+  },
+  '/reiki-horse-treatment-close.jpg': {
+    src: '/optimized/reiki-horse-treatment-close-960.jpg',
+    srcset:
+      '/optimized/reiki-horse-treatment-close-480.jpg 480w, /optimized/reiki-horse-treatment-close-960.jpg 960w'
+  },
+  '/reiki-horse-connection-table.jpg': {
+    src: '/optimized/reiki-horse-connection-table-960.jpg',
+    srcset:
+      '/optimized/reiki-horse-connection-table-480.jpg 480w, /optimized/reiki-horse-connection-table-960.jpg 960w'
+  },
+  '/reiki-horse-calm-touch.jpg': {
+    src: '/optimized/reiki-horse-calm-touch-960.jpg',
+    srcset:
+      '/optimized/reiki-horse-calm-touch-480.jpg 480w, /optimized/reiki-horse-calm-touch-960.jpg 960w'
+  },
+  '/reiki-resting-with-horse-sunlight.jpg': {
+    src: '/optimized/reiki-resting-with-horse-sunlight-960.jpg',
+    srcset:
+      '/optimized/reiki-resting-with-horse-sunlight-480.jpg 480w, /optimized/reiki-resting-with-horse-sunlight-960.jpg 960w'
+  },
+  '/reiki-client-with-horse-table.jpg': {
+    src: '/optimized/reiki-client-with-horse-table-960.jpg',
+    srcset:
+      '/optimized/reiki-client-with-horse-table-480.jpg 480w, /optimized/reiki-client-with-horse-table-960.jpg 960w'
+  },
+  '/reiki-client-resting-between-horses.jpg': {
+    src: '/optimized/reiki-client-resting-between-horses-960.jpg',
+    srcset:
+      '/optimized/reiki-client-resting-between-horses-480.jpg 480w, /optimized/reiki-client-resting-between-horses-960.jpg 960w'
+  },
+  '/reiki-pony-close-resting-client.jpg': {
+    src: '/optimized/reiki-pony-close-resting-client-960.jpg',
+    srcset:
+      '/optimized/reiki-pony-close-resting-client-480.jpg 480w, /optimized/reiki-pony-close-resting-client-960.jpg 960w'
+  },
+  '/reiki-client-resting-horse-pony.jpg': {
+    src: '/optimized/reiki-client-resting-horse-pony-960.jpg',
+    srcset:
+      '/optimized/reiki-client-resting-horse-pony-480.jpg 480w, /optimized/reiki-client-resting-horse-pony-960.jpg 960w'
+  },
+  '/IMG_20260503_114234.jpg': {
+    src: '/optimized/vibe-main-960.jpg',
+    srcset:
+      '/optimized/vibe-main-640.jpg 640w, /optimized/vibe-main-960.jpg 960w, /optimized/vibe-main-1280.jpg 1280w'
+  },
+  '/IMG_20260423_100958 (2).jpg': {
+    src: '/optimized/stillness-space-960.jpg',
+    srcset:
+      '/optimized/stillness-space-480.jpg 480w, /optimized/stillness-space-960.jpg 960w'
+  },
+  '/IMG_20260228_151752.jpg': {
+    src: '/optimized/pasture-meeting-960.jpg',
+    srcset:
+      '/optimized/pasture-meeting-480.jpg 480w, /optimized/pasture-meeting-960.jpg 960w'
+  },
+  '/IMG_20250619_190852.jpg': {
+    src: '/optimized/open-space-960.jpg',
+    srcset: '/optimized/open-space-480.jpg 480w, /optimized/open-space-960.jpg 960w'
+  },
+  '/vibe.jpg': {
+    src: '/optimized/vibe-nature-800.jpg',
+    srcset: '/optimized/vibe-nature-480.jpg 480w, /optimized/vibe-nature-800.jpg 800w'
+  },
+  '/Begenung.jpeg': {
+    src: '/optimized/dialog-meeting-800.jpg',
+    srcset:
+      '/optimized/dialog-meeting-480.jpg 480w, /optimized/dialog-meeting-800.jpg 800w'
+  },
+  '/Fuehren.jpg': {
+    src: '/optimized/leading-774.jpg',
+    srcset: '/optimized/leading-480.jpg 480w, /optimized/leading-774.jpg 774w'
+  }
+}
+
+function imageSrc(img: { src: string }) {
+  return optimizedImpressions[img.src]?.src ?? img.src
+}
+
+function imageSrcset(img: { src: string }) {
+  return optimizedImpressions[img.src]?.srcset
+}
 
 const selectedOffer = ref<Offer | null>(null)
 const isModalOpen = computed(() => selectedOffer.value !== null)
@@ -146,7 +244,7 @@ function closeOffer() {
       <Teleport to="body">
         <div
           v-if="isModalOpen"
-          class="fixed inset-0 z-[70]"
+          class="fixed inset-0 z-[70] overflow-y-auto overscroll-contain"
           role="dialog"
           aria-modal="true"
           :aria-label="
@@ -156,27 +254,29 @@ function closeOffer() {
         >
           <button
             type="button"
-            class="absolute inset-0 bg-taupe-900/40 backdrop-blur-sm"
+            class="fixed inset-0 bg-taupe-900/40 backdrop-blur-sm"
             aria-label="Schließen"
             @click="closeOffer"
           />
 
-          <div class="container-page relative flex min-h-dvh items-center justify-center py-10">
+          <div
+            class="container-page relative flex min-h-dvh items-start justify-center py-3 sm:items-center sm:py-10"
+          >
             <div
-              class="w-full max-w-4xl rounded-3xl border border-taupe-200/60 bg-sand-50/90 p-6 shadow-2xl backdrop-blur sm:p-8"
+              class="my-2 max-h-[calc(100dvh-1.5rem)] w-full max-w-4xl overflow-y-auto rounded-2xl border border-taupe-200/60 bg-sand-50/95 p-4 shadow-2xl backdrop-blur sm:my-0 sm:max-h-[calc(100dvh-5rem)] sm:rounded-3xl sm:p-8"
             >
-              <div class="flex items-start justify-between gap-6">
+              <div class="flex items-start justify-between gap-4 sm:gap-6">
                 <div class="min-w-0">
                   <p class="text-xs font-semibold tracking-[0.28em] text-taupe-600">IMPRESSIONEN</p>
                   <h3
-                    class="mt-3 font-serif text-2xl font-semibold tracking-tight text-taupe-900 sm:text-3xl"
+                    class="mt-2 font-serif text-2xl font-semibold tracking-tight text-taupe-900 sm:mt-3 sm:text-3xl"
                   >
                     {{ selectedOffer?.title }}
                   </h3>
                 </div>
                 <button
                   type="button"
-                  class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-taupe-200/70 bg-white/70 text-taupe-800 transition hover:bg-white"
+                  class="sticky top-0 z-10 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-taupe-200/70 bg-white/90 text-taupe-800 transition hover:bg-white"
                   aria-label="Schließen"
                   @click="closeOffer"
                 >
@@ -186,28 +286,30 @@ function closeOffer() {
 
               <p
                 v-if="selectedOffer?.description"
-                class="mt-4 max-w-2xl text-sm leading-relaxed text-taupe-700"
+                class="mt-3 max-w-2xl text-sm leading-relaxed text-taupe-700 sm:mt-4"
               >
                 {{ selectedOffer.description }}
               </p>
 
-              <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="mt-5 grid gap-3 sm:mt-8 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
                 <figure
                   v-for="img in selectedOffer?.impressions ?? []"
                   :key="img.src"
-                  class="overflow-hidden rounded-2xl border border-taupe-200/60 bg-white/60"
+                  class="overflow-hidden rounded-xl border border-taupe-200/60 bg-white/60 sm:rounded-2xl"
                 >
                   <img
-                    :src="img.src"
+                    :src="imageSrc(img)"
+                    :srcset="imageSrcset(img)"
+                    :sizes="imageSrcset(img) ? modalImageSizes : undefined"
                     :alt="img.alt"
-                    class="h-56 w-full object-cover transition duration-500 ease-out hover:scale-[1.02]"
+                    class="h-40 w-full object-cover transition duration-500 ease-out hover:scale-[1.02] sm:h-56"
                     loading="lazy"
                     decoding="async"
                   />
                 </figure>
               </div>
 
-              <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div class="mt-5 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center sm:justify-between">
                 <a
                   href="#kontakt"
                   class="inline-flex items-center justify-center rounded-full bg-primary-500 px-5 py-3 text-sm font-medium text-sand-50 no-underline transition hover:bg-primary-600"
@@ -215,7 +317,7 @@ function closeOffer() {
                 >
                   Unverbindlich anfragen
                 </a>
-                <p class="text-xs leading-relaxed text-taupe-600">
+                <p class="hidden text-xs leading-relaxed text-taupe-600 sm:block">
                   Tipp: Klick außerhalb schließt das Fenster.
                 </p>
               </div>

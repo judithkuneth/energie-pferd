@@ -9,10 +9,27 @@ import RevealOnScroll from '@/components/RevealOnScroll.vue'
     class="relative isolate overflow-hidden"
   >
     <div class="absolute inset-0 -z-10 bg-taupe-800">
-      <div
-        class="absolute inset-0 bg-[url('/hero-header_original.jpg')] bg-cover bg-center opacity-70"
+      <picture
+        class="absolute inset-0"
         aria-hidden="true"
-      />
+      >
+        <img
+          src="/optimized/hero-header-960.jpg"
+          srcset="
+            /optimized/hero-header-960.jpg   960w,
+            /optimized/hero-header-1440.jpg 1440w,
+            /optimized/hero-header-1920.jpg 1920w
+          "
+          sizes="100vw"
+          alt=""
+          width="1920"
+          height="1440"
+          class="h-full w-full object-cover object-center opacity-70"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </picture>
       <div
         class="absolute inset-0"
         aria-hidden="true"

@@ -3,12 +3,17 @@ import RevealOnScroll from '@/components/RevealOnScroll.vue'
 
 type VibeImage = {
   src: string
+  srcset?: string
+  sizes?: string
   alt: string
 }
 
 const images: VibeImage[] = [
   {
-    src: '/IMG_20260503_114234.jpg',
+    src: '/optimized/vibe-main-960.jpg',
+    srcset:
+      '/optimized/vibe-main-640.jpg 640w, /optimized/vibe-main-960.jpg 960w, /optimized/vibe-main-1280.jpg 1280w',
+    sizes: '(min-width: 1152px) 672px, (min-width: 768px) 58vw, calc(100vw - 2.5rem)',
     alt: 'Ruhige Begegnung – Nähe und Präsenz mit dem Pferd.'
   },
   { src: '/vibe2.jpg', alt: 'Ruhige Nähe und Verbindung mit dem Pferd.' },
@@ -47,6 +52,8 @@ const images: VibeImage[] = [
           <div class="card-surface overflow-hidden">
             <img
               :src="images[0]?.src"
+              :srcset="images[0]?.srcset"
+              :sizes="images[0]?.sizes"
               :alt="images[0]?.alt"
               class="h-[22rem] w-full object-cover sm:h-[28rem]"
               loading="lazy"
@@ -63,6 +70,8 @@ const images: VibeImage[] = [
             <div class="card-surface overflow-hidden">
               <img
                 :src="images[1]?.src"
+                :srcset="images[1]?.srcset"
+                :sizes="images[1]?.sizes"
                 :alt="images[1]?.alt"
                 class="h-[13.5rem] w-full object-cover sm:h-[13.5rem]"
                 loading="lazy"
@@ -78,6 +87,8 @@ const images: VibeImage[] = [
             <div class="card-surface overflow-hidden">
               <img
                 :src="images[2]?.src"
+                :srcset="images[2]?.srcset"
+                :sizes="images[2]?.sizes"
                 :alt="images[2]?.alt"
                 class="h-[13.5rem] w-full object-cover sm:h-[13.5rem]"
                 loading="lazy"

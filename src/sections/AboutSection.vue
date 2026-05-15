@@ -73,7 +73,13 @@ const stopStyles = [
             class="card-surface overflow-hidden md:col-span-5"
           >
             <img
-              src="/IMG-20250501-WA0008.jpg"
+              src="/optimized/about-horse-960.jpg"
+              srcset="
+                /optimized/about-horse-640.jpg   640w,
+                /optimized/about-horse-960.jpg   960w,
+                /optimized/about-horse-1200.jpg 1200w
+              "
+              sizes="(min-width: 1152px) 460px, (min-width: 768px) 40vw, calc(100vw - 2.5rem)"
               alt="Führung und Verbindung mit dem Pferd in der Natur."
               class="h-[18rem] w-full object-cover sm:h-[22rem] md:h-[20rem]"
               loading="lazy"
