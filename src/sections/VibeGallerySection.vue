@@ -16,8 +16,17 @@ const images: VibeImage[] = [
     sizes: '(min-width: 1152px) 672px, (min-width: 768px) 58vw, calc(100vw - 2.5rem)',
     alt: 'Ruhige Begegnung – Nähe und Präsenz mit dem Pferd.'
   },
-  { src: '/vibe2.jpg', alt: 'Ruhige Nähe und Verbindung mit dem Pferd.' },
-  { src: '/vibe.jpg', alt: 'Vibe-Moment mit Pferd in der Natur.' }
+  {
+    src: '/optimized/reiki-client-resting-between-horses-960.jpg',
+    srcset:
+      '/optimized/reiki-client-resting-between-horses-480.jpg 480w, /optimized/reiki-client-resting-between-horses-960.jpg 960w',
+    alt: 'Ruhen auf der Liege, umgeben von Pferden in der Weide.'
+  },
+  {
+    src: '/optimized/leading-774.jpg',
+    srcset: '/optimized/leading-480.jpg 480w, /optimized/leading-774.jpg 774w',
+    alt: 'Führung und Verbindung – gemeinsam auf dem Weg.'
+  }
 ]
 </script>
 

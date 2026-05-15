@@ -62,9 +62,10 @@ const stopStyles = [
           <p
             class="text-base leading-loose text-taupe-700 sm:text-xl sm:leading-loose md:col-span-7"
           >
-            Gemeinsam mit den Pferden begleite ich dich durch das, was sich gerade zeigen will. Hier
-            darfst du wahrnehmen, erkennen und wachsen. Denn deine wahre Größe will nicht nur
-            erkannt, sondern gelebt werden.
+            Gemeinsam mit den Pferden begleite ich dich durch das, was gerade präsent ist. Hier
+            darfst du mit dir selbst in Verbindung kommen, wahrnehmen, erkennen, ausprobieren und
+            wachsen. Denn deine Wahrheit möchte nicht nur erkannt, sondern gelebt und verkörpert
+            werden.
           </p>
 
           <RevealOnScroll
@@ -73,14 +74,13 @@ const stopStyles = [
             class="card-surface overflow-hidden md:col-span-5"
           >
             <img
-              src="/optimized/about-horse-960.jpg"
+              src="/optimized/reiki-horse-calm-touch-960.jpg"
               srcset="
-                /optimized/about-horse-640.jpg   640w,
-                /optimized/about-horse-960.jpg   960w,
-                /optimized/about-horse-1200.jpg 1200w
+                /optimized/reiki-horse-calm-touch-480.jpg 480w,
+                /optimized/reiki-horse-calm-touch-960.jpg 960w
               "
               sizes="(min-width: 1152px) 460px, (min-width: 768px) 40vw, calc(100vw - 2.5rem)"
-              alt="Führung und Verbindung mit dem Pferd in der Natur."
+              alt="Sanfte Berührung mit dem Pferd in der Weide."
               class="h-[18rem] w-full object-cover sm:h-[22rem] md:h-[20rem]"
               loading="lazy"
               decoding="async"
