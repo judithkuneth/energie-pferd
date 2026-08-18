@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import logoMark from '@/assets/brand/energie-pferd-mark-128.png'
+
 const year = new Date().getFullYear()
 </script>
 
@@ -6,9 +8,22 @@ const year = new Date().getFullYear()
   <footer class="border-t border-taupe-200/50 bg-sand-50">
     <div class="container-page py-10">
       <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p class="font-serif text-lg font-semibold text-taupe-900">Energie Pferd</p>
-        </div>
+        <RouterLink to="/" class="group inline-flex items-center gap-3 no-underline">
+          <img
+            :src="logoMark"
+            alt=""
+            width="128"
+            height="128"
+            class="h-[42px] w-[42px] shrink-0 object-contain transition duration-300 group-hover:scale-105 sm:h-12 sm:w-12"
+            aria-hidden="true"
+          />
+          <span
+            class="brand-wordmark font-forum text-xl font-normal uppercase tracking-[0.08em] text-taupe-900"
+          >
+            Energie Pferd
+          </span>
+          <span class="sr-only">Zur Startseite</span>
+        </RouterLink>
         <div class="flex flex-wrap gap-4 text-sm">
           <RouterLink class="text-taupe-700 no-underline hover:underline" to="/#angebote">
             Angebote

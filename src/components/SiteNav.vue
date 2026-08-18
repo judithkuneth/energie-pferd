@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import logoMark from '@/assets/brand/energie-pferd-mark-128.png'
 
 const emit = defineEmits<{
   book: []
@@ -37,12 +38,22 @@ function openBooking() {
     <div class="container-page flex items-center justify-between gap-4 py-3">
       <a
         href="#top"
-        class="group inline-flex items-baseline gap-2 no-underline"
+        class="group inline-flex items-center gap-2 no-underline sm:gap-3"
         @click="close"
       >
-        <span class="font-serif text-lg font-semibold tracking-wide text-taupe-900"
-          >Energie Pferd</span
+        <img
+          :src="logoMark"
+          alt=""
+          width="128"
+          height="128"
+          class="h-[42px] w-[42px] shrink-0 object-contain transition duration-300 group-hover:scale-105 sm:h-12 sm:w-12"
+          aria-hidden="true"
+        />
+        <span
+          class="brand-wordmark font-forum text-lg font-normal uppercase tracking-[0.08em] text-taupe-900 sm:text-xl"
         >
+          Energie Pferd
+        </span>
         <!-- <span class="hidden text-xs font-medium tracking-[0.22em] text-taupe-600 sm:inline">
           HEALING SPACE
         </span> -->

@@ -43,15 +43,10 @@ const emit = defineEmits<{
         >
           Triff dich selbst im Raum der Pferde
         </h2> -->
-        <p
-          class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-sand-100/80 sm:text-sm"
-        >
-          Energie Pferd
-        </p>
         <h1
           class="max-w-4xl font-serif text-4xl font-semibold leading-[1.06] tracking-tight text-sand-50 sm:text-6xl"
         >
-         Begegne dir selbst im Raum der Pferde
+          Begegne dir selbst im Raum der Pferde
         </h1>
 
         <!-- <p class="mt-6 max-w-2xl text-base leading-relaxed text-sand-100/90 sm:text-lg">
