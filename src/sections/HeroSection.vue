@@ -61,6 +61,11 @@ const emit = defineEmits<{
         >
           Triff dich selbst im Raum der Pferde
         </h2> -->
+        <p
+          class="mb-4 max-w-2xl text-xs font-medium leading-relaxed tracking-[0.06em] text-sand-100/80 sm:text-sm"
+        >
+          Pferdegestützte Begleitung · Energetische Körperarbeit
+        </p>
         <h1
           class="max-w-4xl font-serif text-4xl font-semibold leading-[1.06] tracking-tight text-sand-50 sm:text-6xl"
         >
