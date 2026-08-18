@@ -101,7 +101,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`
               >
                 <span> Adresse*</span>
                 <span class="text-taupe-700 sm:text-right">
-                9555 Glanegg, Kärnten, Österreich
+                9555 Glanegg, Kärnten · rund 20 Minuten von Klagenfurt
                 </span>
               </a>
             </div>
