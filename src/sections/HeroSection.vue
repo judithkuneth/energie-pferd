@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import PrimaryButton from '@/components/PrimaryButton.vue'
 import RevealOnScroll from '@/components/RevealOnScroll.vue'
+
+const emit = defineEmits<{
+  book: []
+}>()
 </script>
 
 <template>
@@ -47,7 +51,7 @@ import RevealOnScroll from '@/components/RevealOnScroll.vue'
         <h1
           class="max-w-4xl font-serif text-4xl font-semibold leading-[1.06] tracking-tight text-sand-50 sm:text-6xl"
         >
-          Selbstbegegnung im Raum der Pferde
+         Begegne dir selbst im Raum der Pferde
         </h1>
 
         <!-- <p class="mt-6 max-w-2xl text-base leading-relaxed text-sand-100/90 sm:text-lg">
@@ -57,7 +61,7 @@ import RevealOnScroll from '@/components/RevealOnScroll.vue'
           Ein Raum für Selbstbegegnung, Bewusstsein und die heilende Kraft der Pferde.
         </p> -->
         <p class="mt-6 max-w-2xl text-base leading-relaxed text-sand-100/90 sm:text-lg">
-          Hier darfst du dir selbst näherkommen – sicher und wertfrei begleitet in der Präsenz der
+          Hier darfst du dir selbst näherkommen – sicher und wertfrei begleitet in der kraftvollen Präsenz der
           Pferde.
         </p>
         <!-- <p class="mt-6 max-w-2xl text-base leading-relaxed text-sand-100/90 sm:text-lg">
@@ -72,7 +76,9 @@ import RevealOnScroll from '@/components/RevealOnScroll.vue'
 
         <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
           <!-- <PrimaryButton href="#angebote">Angebote entdecken</PrimaryButton> -->
-          <PrimaryButton href="#kontakt" variant="ghost">Session anfragen</PrimaryButton>
+          <PrimaryButton variant="ghost" @click="emit('book')">
+            20 Min. Kennenlern-Call
+          </PrimaryButton>
         </div>
       </RevealOnScroll>
     </div>

@@ -60,12 +60,12 @@ const stopStyles = [
         </p> -->
         <div class="grid gap-6 md:grid-cols-12 md:items-center">
           <p
-            class="text-base leading-loose text-taupe-700 sm:text-xl sm:leading-loose md:col-span-7"
+            class="text-lg leading-[1.75] text-taupe-700 sm:text-[1.1875rem] md:col-span-7"
           >
             Gemeinsam mit den Pferden begleite ich dich durch das, was gerade präsent ist. Hier
-            darfst du mit dir selbst in Verbindung kommen, wahrnehmen, erfahren, ausprobieren und
-            wachsen. Denn deine Wahrheit möchte nicht nur erkannt, sondern gelebt und verkörpert
-            werden.
+            darfst du mit dir selbst in Verbindung kommen, wahrnehmen, erfahren, ausprobieren,
+            entdecken und loslassen. Denn was hier spürbar wird, möchte nicht nur erkannt, sondern
+            auch im Alltag gelebt und verkörpert werden.
           </p>
 
           <RevealOnScroll

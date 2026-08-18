@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import RevealOnScroll from '@/components/RevealOnScroll.vue'
 
+const emit = defineEmits<{
+  book: []
+}>()
+
 const email = 'judith.kuneth@gmail.com'
 const instagramUrl = 'https://www.instagram.com/judith.energie.pferd/'
 const phoneNumberRaw = '+43 676 83555785'
@@ -43,12 +47,25 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`
           >
             Schön, dass du da bist!
           </h2>
-          <p class="mt-5 text-sm leading-relaxed text-taupe-700">
-            Schreib mir ein paar Zeilen – ganz unverbindlich. Ich melde mich zeitnah mit einem
-            Vorschlag für den nächsten Schritt.
+          <div class="mt-8">
+            <button
+              type="button"
+              class="inline-flex items-center justify-center rounded-full bg-primary-500 px-6 py-3 text-sm font-medium text-sand-50 transition hover:bg-primary-600"
+              @click="emit('book')"
+            >
+              20 Min. Kennenlern-Call
+            </button>
+            <p class="mt-3 text-xs font-medium tracking-wide text-taupe-600">
+              Online · kostenlos · unverbindlich
+            </p>
+          </div>
+
+          <p class="mx-auto mt-8 max-w-xl text-left text-sm leading-relaxed text-taupe-700">
+            Bereit loszulegen? Ich freue mich, von dir zu hören. Schreib mir ein paar Zeilen über
+            dich, dein Anliegen oder das, was dich gerade bewegt.
           </p>
 
-          <div class="mx-auto mt-10 max-w-xl space-y-4 text-sm">
+          <div class="mx-auto mt-6 max-w-xl space-y-4 text-sm">
             <div class="hairline" />
             <div class="flex flex-col gap-3">
               <a
@@ -76,7 +93,21 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`
                 <span>Instagram</span>
                 <span class="text-taupe-700">@judith.energie.pferd</span>
               </a>
+              <a
+                href="https://maps.app.goo.gl/cRddJayGQChRek8F8"
+                target="_blank"
+                rel="noopener"
+                class="flex flex-col gap-1 rounded-xl border border-taupe-200/60 bg-white/60 px-4 py-3 text-left font-medium text-taupe-900 no-underline transition hover:border-primary-500/45 hover:ring-2 hover:ring-primary-500/20 sm:flex-row sm:items-center sm:justify-between sm:gap-4"
+              >
+                <span> Adresse*</span>
+                <span class="text-taupe-700 sm:text-right">
+                9555 Glanegg, Kärnten, Österreich
+                </span>
+              </a>
             </div>
+            <p class="text-left text-xs leading-relaxed text-taupe-600">
+              * Die genaue Adresse erhältst du nach der Terminvereinbarung.
+            </p>
           </div>
         </RevealOnScroll>
 

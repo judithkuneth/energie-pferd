@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
+const emit = defineEmits<{
+  book: []
+}>()
+
 type NavItem = { label: string; href: string }
 
 const items: NavItem[] = [
@@ -20,6 +24,11 @@ const menuClass = computed(() =>
 
 function close() {
   open.value = false
+}
+
+function openBooking() {
+  close()
+  emit('book')
 }
 </script>
 
@@ -52,12 +61,13 @@ function close() {
         >
           {{ item.label }}
         </a>
-        <a
-          href="#kontakt"
+        <button
+          type="button"
           class="rounded-full bg-primary-500 px-4 py-2 text-sm font-medium text-sand-50 no-underline transition hover:bg-primary-600"
+          @click="openBooking"
         >
-          Session anfragen
-        </a>
+          20 Min. Kennenlern-Call
+        </button>
       </nav>
 
       <button
@@ -92,13 +102,13 @@ function close() {
         >
           {{ item.label }}
         </a>
-        <a
-          href="#kontakt"
+        <button
+          type="button"
           class="mt-2 inline-flex items-center justify-center rounded-full bg-primary-500 px-4 py-3 text-sm font-medium text-sand-50 no-underline transition hover:bg-primary-600"
-          @click="close"
+          @click="openBooking"
         >
-          Session anfragen
-        </a>
+          20 Min. Kennenlern-Call
+        </button>
       </div>
     </div>
   </header>
