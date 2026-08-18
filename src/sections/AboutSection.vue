@@ -63,7 +63,7 @@ const stopStyles = [
             class="text-base leading-loose text-taupe-700 sm:text-xl sm:leading-loose md:col-span-7"
           >
             Gemeinsam mit den Pferden begleite ich dich durch das, was gerade präsent ist. Hier
-            darfst du mit dir selbst in Verbindung kommen, wahrnehmen, erkennen, ausprobieren und
+            darfst du mit dir selbst in Verbindung kommen, wahrnehmen, erfahren, ausprobieren und
             wachsen. Denn deine Wahrheit möchte nicht nur erkannt, sondern gelebt und verkörpert
             werden.
           </p>
@@ -74,14 +74,14 @@ const stopStyles = [
             class="card-surface overflow-hidden md:col-span-5"
           >
             <img
-              src="/optimized/reiki-horse-calm-touch-960.jpg"
+              src="/optimized/about-healingsession-sarah-top-960.jpg"
               srcset="
-                /optimized/reiki-horse-calm-touch-480.jpg 480w,
-                /optimized/reiki-horse-calm-touch-960.jpg 960w
+                /optimized/about-healingsession-sarah-top-480.jpg 480w,
+                /optimized/about-healingsession-sarah-top-960.jpg 960w
               "
               sizes="(min-width: 1152px) 460px, (min-width: 768px) 40vw, calc(100vw - 2.5rem)"
-              alt="Sanfte Berührung mit dem Pferd in der Weide."
-              class="h-[18rem] w-full object-cover sm:h-[22rem] md:h-[20rem]"
+              alt="Healing-Session mit Pferd in ruhiger Begleitung."
+              class="h-[18rem] w-full object-cover object-right-top sm:h-[22rem] md:h-[20rem]"
               loading="lazy"
               decoding="async"
             />

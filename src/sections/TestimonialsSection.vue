@@ -12,7 +12,7 @@ const testimonials: Testimonial[] = [
     quote:
       '„Ich habe mich vom ersten Moment an sicher gefühlt. Die Begegnung mit den Pferden war wie ein Spiegel – still, klar und unglaublich heilsam.“',
     name: 'Platzhalter · Klientin',
-    detail: 'Reiki mit Pferden',
+    detail: 'Energetische Körperarbeit',
   },
   {
     quote:
@@ -64,4 +64,3 @@ const testimonials: Testimonial[] = [
     </div>
   </section>
 </template>
-

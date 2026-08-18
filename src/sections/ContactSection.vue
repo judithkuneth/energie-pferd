@@ -2,7 +2,7 @@
 import RevealOnScroll from '@/components/RevealOnScroll.vue'
 
 const email = 'judith.kuneth@gmail.com'
-const instagramUrl = 'https://instagram.com/judith.energie.pferd'
+const instagramUrl = 'https://www.instagram.com/judith.energie.pferd/'
 const phoneNumberRaw = '+43 676 83555785'
 const whatsappNumber = phoneNumberRaw.replace(/\D/g, '')
 const whatsappUrl = `https://wa.me/${whatsappNumber}`
@@ -139,7 +139,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`
                   class="h-11 rounded-xl border border-taupe-200/70 bg-white/70 px-4 text-sm text-taupe-900 shadow-sm focus:border-gold-300/70 focus:ring-2 focus:ring-gold-200/40"
                 >
                   <option>Session anfragen</option>
-                  <option>Reiki mit Pferden</option>
+                  <option>Energetische Körperarbeit</option>
                   <option>Healing Session</option>
                   <option>Energetische Begleitung</option>
                   <option>Sonstiges</option>

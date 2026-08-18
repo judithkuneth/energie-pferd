@@ -11,76 +11,102 @@ type Offer = {
 
 const offers: Offer[] = [
   {
-    title: 'Reiki mit Pferden',
+    title: 'Körper- & Energiarbeit',
     description:
-      'Energetische Behandlung in Präsenz der Pferde – für Regulation, Klarheit und tiefe Rückverbindung.',
-    note: 'Sanft · geerdet · berührend',
+      'Ganzheitliche Körper- und Energiearbeit in der Präsenz der Pferde – ein Raum zum Ankommen und Loslassen um mit dir selbst in Verbindung zu kommen.',
+    note: 'Erden · Spüren · Verbinden',
     impressions: [
-      { src: '/reiki-session-pasture-horses.jpg', alt: 'Reiki Impression - Pferde im offenen Raum.' },
-      { src: '/reiki-horse-treatment-close.jpg', alt: 'Reiki Impression - ruhige Behandlung mit Pferd.' },
-      { src: '/reiki-horse-connection-table.jpg', alt: 'Reiki Impression - Verbindung am Behandlungstisch.' },
-      { src: '/reiki-horse-calm-touch.jpg', alt: 'Reiki Impression - sanfte Beruehrung mit Pferd.' },
-      { src: '/reiki-resting-with-horse-sunlight.jpg', alt: 'Reiki Impression - Ruhe im Sonnenlicht.' },
-      { src: '/reiki-client-with-horse-table.jpg', alt: 'Reiki Impression - Pferd begleitet die Session.' },
-      { src: '/reiki-client-resting-between-horses.jpg', alt: 'Reiki Impression - Ruhen zwischen Pferden.' },
-      { src: '/reiki-pony-close-resting-client.jpg', alt: 'Reiki Impression - Pony in stiller Naehe.' },
-      { src: '/reiki-client-resting-horse-pony.jpg', alt: 'Reiki Impression - Pferd und Pony begleiten Reiki.' },
+      {
+        src: '/healingsession-sarah.jpg',
+        alt: 'Energetische Körperarbeit - Healing-Session mit Sarah.',
+      },
+      {
+        src: '/optimized/healingsession-daniela-960.jpg',
+        alt: 'Energetische Körperarbeit - Healing-Session mit Daniela.',
+      },
+      {
+        src: '/reiki-session-pasture-horses.jpg',
+        alt: 'Energetische Körperarbeit - Pferde im offenen Raum.',
+      },
+      {
+        src: '/reiki-resting-with-horse-sunlight.jpg',
+        alt: 'Energetische Körperarbeit - Ruhe im Sonnenlicht.',
+      },
+      {
+        src: '/reiki-client-resting-between-horses.jpg',
+        alt: 'Energetische Körperarbeit - Ruhen zwischen Pferden.',
+      },
+      {
+        src: '/reiki-pony-close-resting-client.jpg',
+        alt: 'Energetische Körperarbeit - Pony in stiller Naehe.',
+      },
       // { src: '/IMG_20260503_114234.jpg', alt: 'Impression – ruhige Begegnung mit dem Pferd.' },
       // { src: '/vibe2.jpg', alt: 'Impression – Nähe und Verbindung.' },
       // { src: '/vibe.jpg', alt: 'Impression – Naturmoment.' }
-    ]
+    ],
   },
   {
-    title: 'Stille mit Pferden',
-    description: 'Ein Raum zum Sein – ohne Worte, ohne Programm. In der Präsenz der Pferde.',
-    note: 'Ankommen · Atmen · Spüren',
+    title: 'Spüren und Vertrauen',
+    description:
+      'Ein Raum zum Innehalten und Wahrnehmen, ohne etwas verändern zu müssen. Hier darfst du deiner Intuition wieder näherkommen und lernen ihr zu vertrauen.',
+    note: 'Wahrnehmen · Fühlen · Vertrauen',
     impressions: [
       // { src: '/vibe2.jpg', alt: 'Impression – Stille und Präsenz.' },
       { src: '/IMG_20260503_114234.jpg', alt: 'Impression – sanfte Begegnung.' },
       { src: '/IMG_20260423_100958 (2).jpg', alt: 'Impression – stille Präsenz im Raum.' },
       // { src: '/IMG_20260303_105058.jpg', alt: 'Impression – Ruhe und Weite.' },
       // { src: '/IMG-20260505-WA0019.jpg', alt: 'Impression – Ruhe im Grünen.' },
-      { src: '/IMG_20260228_151752.jpg', alt: 'Impression – Begegnung auf der Weide.' }
+      { src: '/IMG_20260228_151752.jpg', alt: 'Impression – Begegnung auf der Weide.' },
+      { src: '/vibe.jpg', alt: 'Impression – Freiheit in der Natur.' },
+      { src: '/IMG_20250619_190852.jpg', alt: 'Impression – Pferd im offenen Raum.' },
       // { src: '/vibe.jpg', alt: 'Impression – Naturmoment.' }
-    ]
+    ],
   },
 
   {
-    title: 'Im Dialog mit dem Pferd',
+    title: 'Selbstführung',
     description:
-      'Erst hinhören, was sich zeigt, dann selbst in Führung gehen. Ein Weg vom Erkennen ins Tun – mit dem Pferd an deiner Seite.',
-    note: 'Spüren · Erkennen · Führen',
+      'Im Dialog mit dem Pferd wird unsere eigene Haltung unmittelbar spürbar. Pferde fordern Klarheit und Präsenz – und zeigen uns, dass Führung immer bei uns selbst beginnt.',
+    note: 'Klarheit · Führen · Verkörpern',
     impressions: [
       { src: '/Begenung.jpeg', alt: 'Impression – Begegnung im Dialog.' },
-      { src: '/Fuehren.jpg', alt: 'Impression – Führung und Verbindung.' }
+      { src: '/Fuehren.jpg', alt: 'Impression – Führung und Verbindung.' },
       // { src: '/vibe.jpg', alt: 'Impression – Klarheit im Draußen.' },
       // { src: '/vibe2.jpg', alt: 'Impression – Verbindung.' },
-    ]
+    ],
   },
   {
-    title: 'Café & Pferd',
+    title: 'Persönliche Begleitung',
     description:
-      'Persönliche Gespräche: mal am Tisch, mal an der Seite der Pferde – ein geschützter Raum für ehrliche Worte und stille Begegnungen. Einmalig oder als längerer Weg.',
-    note: 'Persönlich · ehrlich · offen',
+      'Ein geschützter Raum für dich und alles, was dich gerade bewegt – vor Ort oder online. Einmalig oder über einen längeren Zeitraum.',
+    note: 'Begegnung · Reflexion · Begleitung',
     impressions: [
       // { src: '/vibe.jpg', alt: 'Impression – Gespräch und Natur.' },
       // { src: '/IMG_20260503_114234.jpg', alt: 'Impression – Begegnung.' },
       // { src: '/vibe2.jpg', alt: 'Impression – Nähe.' }
-    ]
+    ],
   },
-
   {
-    title: 'Offener Raum',
+    title: '1:1 Tages-Retreat',
     description:
-      'Zeit mit den Pferden – ohne festes Ziel. Wir schauen, was sich uns zeigt. Frei und kombinierbar mit den anderen Formaten.',
-    note: 'frei · offen · spielerisch',
+      'Dieser Tag gehört ganz dir. Wir gestalten ihn rund um das, was gerade Raum bekommen darf – mit Körperarbeit, Stille, Dialog und Zeit in der Natur und mit den Pferden.',
+      note: 'Zeit für dich',
     impressions: [
-      { src: '/vibe.jpg', alt: 'Impression – Freiheit in der Natur.' },
-      { src: '/IMG_20260503_114234.jpg', alt: 'Impression – Präsenz.' },
-      // { src: '/vibe2.jpg', alt: 'Impression – offener Raum.' },
-      { src: '/IMG_20250619_190852.jpg', alt: 'Impression – Pferd im offenen Raum.' }
-    ]
-  }
+      {
+        src: '/optimized/about-healingsession-sarah-top-960.jpg',
+        alt: 'Impression – energetische Körperarbeit mit Pferd in persönlicher Begleitung.',
+      },
+      {
+        src: '/optimized/healingsession-daniela-960.jpg',
+        alt: 'Impression – persönliche Healing-Session mit Pferd.',
+      },
+      {
+        src: '/optimized/vibe-main-960.jpg',
+        alt: 'Impression – achtsame Begegnung mit dem Pferd.',
+      },
+      { src: '/optimized/open-space-960.jpg', alt: 'Impression – offener Raum mit den Pferden.' },
+    ],
+  },
 ]
 
 const modalImageSizes = '(min-width: 1024px) 280px, (min-width: 640px) 45vw, calc(100vw - 4rem)'
@@ -88,80 +114,82 @@ const optimizedImpressions: Record<string, { src: string; srcset: string }> = {
   '/reiki-session-pasture-horses.jpg': {
     src: '/optimized/reiki-session-pasture-horses-960.jpg',
     srcset:
-      '/optimized/reiki-session-pasture-horses-480.jpg 480w, /optimized/reiki-session-pasture-horses-960.jpg 960w'
+      '/optimized/reiki-session-pasture-horses-480.jpg 480w, /optimized/reiki-session-pasture-horses-960.jpg 960w',
   },
   '/reiki-horse-treatment-close.jpg': {
     src: '/optimized/reiki-horse-treatment-close-960.jpg',
     srcset:
-      '/optimized/reiki-horse-treatment-close-480.jpg 480w, /optimized/reiki-horse-treatment-close-960.jpg 960w'
+      '/optimized/reiki-horse-treatment-close-480.jpg 480w, /optimized/reiki-horse-treatment-close-960.jpg 960w',
   },
   '/reiki-horse-connection-table.jpg': {
     src: '/optimized/reiki-horse-connection-table-960.jpg',
     srcset:
-      '/optimized/reiki-horse-connection-table-480.jpg 480w, /optimized/reiki-horse-connection-table-960.jpg 960w'
+      '/optimized/reiki-horse-connection-table-480.jpg 480w, /optimized/reiki-horse-connection-table-960.jpg 960w',
   },
   '/reiki-horse-calm-touch.jpg': {
     src: '/optimized/reiki-horse-calm-touch-960.jpg',
     srcset:
-      '/optimized/reiki-horse-calm-touch-480.jpg 480w, /optimized/reiki-horse-calm-touch-960.jpg 960w'
+      '/optimized/reiki-horse-calm-touch-480.jpg 480w, /optimized/reiki-horse-calm-touch-960.jpg 960w',
   },
   '/reiki-resting-with-horse-sunlight.jpg': {
     src: '/optimized/reiki-resting-with-horse-sunlight-960.jpg',
     srcset:
-      '/optimized/reiki-resting-with-horse-sunlight-480.jpg 480w, /optimized/reiki-resting-with-horse-sunlight-960.jpg 960w'
+      '/optimized/reiki-resting-with-horse-sunlight-480.jpg 480w, /optimized/reiki-resting-with-horse-sunlight-960.jpg 960w',
   },
   '/reiki-client-with-horse-table.jpg': {
     src: '/optimized/reiki-client-with-horse-table-960.jpg',
     srcset:
-      '/optimized/reiki-client-with-horse-table-480.jpg 480w, /optimized/reiki-client-with-horse-table-960.jpg 960w'
+      '/optimized/reiki-client-with-horse-table-480.jpg 480w, /optimized/reiki-client-with-horse-table-960.jpg 960w',
+  },
+  '/healingsession-sarah.jpg': {
+    src: '/optimized/about-healingsession-sarah-top-960.jpg',
+    srcset:
+      '/optimized/about-healingsession-sarah-top-480.jpg 480w, /optimized/about-healingsession-sarah-top-960.jpg 960w',
   },
   '/reiki-client-resting-between-horses.jpg': {
     src: '/optimized/reiki-client-resting-between-horses-960.jpg',
     srcset:
-      '/optimized/reiki-client-resting-between-horses-480.jpg 480w, /optimized/reiki-client-resting-between-horses-960.jpg 960w'
+      '/optimized/reiki-client-resting-between-horses-480.jpg 480w, /optimized/reiki-client-resting-between-horses-960.jpg 960w',
   },
   '/reiki-pony-close-resting-client.jpg': {
     src: '/optimized/reiki-pony-close-resting-client-960.jpg',
     srcset:
-      '/optimized/reiki-pony-close-resting-client-480.jpg 480w, /optimized/reiki-pony-close-resting-client-960.jpg 960w'
+      '/optimized/reiki-pony-close-resting-client-480.jpg 480w, /optimized/reiki-pony-close-resting-client-960.jpg 960w',
   },
   '/reiki-client-resting-horse-pony.jpg': {
     src: '/optimized/reiki-client-resting-horse-pony-960.jpg',
     srcset:
-      '/optimized/reiki-client-resting-horse-pony-480.jpg 480w, /optimized/reiki-client-resting-horse-pony-960.jpg 960w'
+      '/optimized/reiki-client-resting-horse-pony-480.jpg 480w, /optimized/reiki-client-resting-horse-pony-960.jpg 960w',
   },
   '/IMG_20260503_114234.jpg': {
     src: '/optimized/vibe-main-960.jpg',
     srcset:
-      '/optimized/vibe-main-640.jpg 640w, /optimized/vibe-main-960.jpg 960w, /optimized/vibe-main-1280.jpg 1280w'
+      '/optimized/vibe-main-640.jpg 640w, /optimized/vibe-main-960.jpg 960w, /optimized/vibe-main-1280.jpg 1280w',
   },
   '/IMG_20260423_100958 (2).jpg': {
     src: '/optimized/stillness-space-960.jpg',
-    srcset:
-      '/optimized/stillness-space-480.jpg 480w, /optimized/stillness-space-960.jpg 960w'
+    srcset: '/optimized/stillness-space-480.jpg 480w, /optimized/stillness-space-960.jpg 960w',
   },
   '/IMG_20260228_151752.jpg': {
     src: '/optimized/pasture-meeting-960.jpg',
-    srcset:
-      '/optimized/pasture-meeting-480.jpg 480w, /optimized/pasture-meeting-960.jpg 960w'
+    srcset: '/optimized/pasture-meeting-480.jpg 480w, /optimized/pasture-meeting-960.jpg 960w',
   },
   '/IMG_20250619_190852.jpg': {
     src: '/optimized/open-space-960.jpg',
-    srcset: '/optimized/open-space-480.jpg 480w, /optimized/open-space-960.jpg 960w'
+    srcset: '/optimized/open-space-480.jpg 480w, /optimized/open-space-960.jpg 960w',
   },
   '/vibe.jpg': {
     src: '/optimized/vibe-nature-800.jpg',
-    srcset: '/optimized/vibe-nature-480.jpg 480w, /optimized/vibe-nature-800.jpg 800w'
+    srcset: '/optimized/vibe-nature-480.jpg 480w, /optimized/vibe-nature-800.jpg 800w',
   },
   '/Begenung.jpeg': {
     src: '/optimized/dialog-meeting-800.jpg',
-    srcset:
-      '/optimized/dialog-meeting-480.jpg 480w, /optimized/dialog-meeting-800.jpg 800w'
+    srcset: '/optimized/dialog-meeting-480.jpg 480w, /optimized/dialog-meeting-800.jpg 800w',
   },
   '/Fuehren.jpg': {
     src: '/optimized/leading-774.jpg',
-    srcset: '/optimized/leading-480.jpg 480w, /optimized/leading-774.jpg 774w'
-  }
+    srcset: '/optimized/leading-480.jpg 480w, /optimized/leading-774.jpg 774w',
+  },
 }
 
 function imageSrc(img: { src: string }) {
@@ -185,10 +213,7 @@ function closeOffer() {
 </script>
 
 <template>
-  <section
-    id="angebote"
-    class="py-12 sm:py-16"
-  >
+  <section id="angebote" class="py-12 sm:py-16">
     <div class="container-page">
       <RevealOnScroll as="div">
         <p class="text-xs font-semibold tracking-[0.28em] text-taupe-600">ANGEBOTE</p>
@@ -309,7 +334,9 @@ function closeOffer() {
                 </figure>
               </div>
 
-              <div class="mt-5 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center sm:justify-between">
+              <div
+                class="mt-5 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:items-center sm:justify-between"
+              >
                 <a
                   href="#kontakt"
                   class="inline-flex items-center justify-center rounded-full bg-primary-500 px-5 py-3 text-sm font-medium text-sand-50 no-underline transition hover:bg-primary-600"
