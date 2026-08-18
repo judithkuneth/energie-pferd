@@ -79,7 +79,7 @@ const emit = defineEmits<{
           Ein Raum für Selbstbegegnung, Bewusstsein und die heilende Kraft der Pferde.
         </p> -->
         <p
-          class="hero-copy mt-6 w-fit max-w-2xl px-4 py-3 text-base leading-relaxed text-sand-50/95 sm:text-lg"
+          class="hero-copy mt-6 w-fit max-w-2xl py-3 text-base leading-relaxed text-sand-50/95 sm:text-lg"
         >
           Hier darfst du dir selbst näherkommen – sicher und wertfrei begleitet in der kraftvollen Präsenz der
           Pferde.
