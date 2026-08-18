@@ -83,10 +83,10 @@ const submitNewsletter = async (event: SubmitEvent) => {
           <div class="space-y-4">
             <div>
               <h2 class="font-serif text-lg font-semibold tracking-tight text-taupe-900 sm:text-xl">
-                Termine & Angebote
+              Aktuelle Termine & Angebote
               </h2>
               <p class="mt-1.5 max-w-lg text-xs leading-relaxed text-taupe-600 sm:text-sm">
-                Über neuer Termine, besondere Angebote und Einblicke erfährst du hier.
+                Trag dich ein um über aktuelle Angebote und Einblicke informiert zu bleiben.
               </p>
             </div>
 
