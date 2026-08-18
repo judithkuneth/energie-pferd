@@ -74,10 +74,10 @@ const stopStyles = [
             class="card-surface overflow-hidden md:col-span-5"
           >
             <img
-              src="/optimized/about-healingsession-sarah-top-960.jpg"
+              src="/optimized/about-healingsession-sarah-edited-960.jpg"
               srcset="
-                /optimized/about-healingsession-sarah-top-480.jpg 480w,
-                /optimized/about-healingsession-sarah-top-960.jpg 960w
+                /optimized/about-healingsession-sarah-edited-480.jpg 480w,
+                /optimized/about-healingsession-sarah-edited-960.jpg 960w
               "
               sizes="(min-width: 1152px) 460px, (min-width: 768px) 40vw, calc(100vw - 2.5rem)"
               alt="Healing-Session mit Pferd in ruhiger Begleitung."

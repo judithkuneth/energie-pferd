@@ -60,7 +60,9 @@ const emit = defineEmits<{
         <!-- <p class="mt-6 max-w-2xl text-base leading-relaxed text-sand-100/90 sm:text-lg">
           Ein Raum für Selbstbegegnung, Bewusstsein und die heilende Kraft der Pferde.
         </p> -->
-        <p class="mt-6 max-w-2xl text-base leading-relaxed text-sand-100/90 sm:text-lg">
+        <p
+          class="hero-copy mt-6 w-fit max-w-2xl px-4 py-3 text-base leading-relaxed text-sand-50/95 sm:text-lg"
+        >
           Hier darfst du dir selbst näherkommen – sicher und wertfrei begleitet in der kraftvollen Präsenz der
           Pferde.
         </p>
@@ -84,3 +86,20 @@ const emit = defineEmits<{
     </div>
   </section>
 </template>
+
+<style scoped>
+.hero-copy {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-copy::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0.15rem -0.25rem;
+  border-radius: 2rem;
+  background: rgba(43, 34, 31, 0.24);
+  filter: blur(14px);
+  content: '';
+}
+</style>

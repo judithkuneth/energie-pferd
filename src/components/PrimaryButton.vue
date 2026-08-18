@@ -25,7 +25,7 @@ withDefaults(
     :class="
       variant === 'primary'
         ? 'bg-primary-500 text-sand-50 hover:bg-primary-600'
-        : 'border border-taupe-300/70 bg-white/60 text-taupe-900 hover:bg-white'
+        : 'border border-taupe-300/80 bg-white/75 text-taupe-900 hover:-translate-y-0.5 hover:bg-white/95 hover:shadow-sm'
     "
   >
     <slot />
@@ -37,7 +37,7 @@ withDefaults(
     :class="
       variant === 'primary'
         ? 'bg-primary-500 text-sand-50 hover:bg-primary-600'
-        : 'border border-taupe-300/70 bg-white/60 text-taupe-900 hover:bg-white'
+        : 'border border-taupe-300/80 bg-white/75 text-taupe-900 hover:-translate-y-0.5 hover:bg-white/95 hover:shadow-sm'
     "
   >
     <slot />

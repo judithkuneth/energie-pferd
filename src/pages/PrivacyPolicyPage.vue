@@ -26,19 +26,14 @@
           bei der Nutzung ihrer Angebote verarbeitet werden.
         </p>
 
-        <aside class="mt-8 rounded-2xl border border-gold-300/50 bg-gold-200/25 p-5 text-sm leading-relaxed">
-          <strong class="font-semibold text-taupe-900">Vor Veröffentlichung ergänzen:</strong>
-          Bitte die vollständige Postanschrift eintragen. Diese Angabe ist im Website-Projekt
-          derzeit nicht hinterlegt.
-        </aside>
-
         <div class="privacy-content mt-10 space-y-10">
           <section>
             <h2>1. Verantwortliche</h2>
             <p>
               Judith Kuneth<br />
-              Anzengruberstarraße 19/1<br />
-              AT - 9020 Klagenfurt<br />
+              Anzengruberstraße 19/1<br />
+              9020 Klagenfurt<br />
+              Österreich<br />
 
               E-Mail:
               <a href="mailto:judith.kuneth@gmail.com">judith.kuneth@gmail.com</a><br />
@@ -49,18 +44,36 @@
           <section>
             <h2>2. Hosting und Server-Logfiles</h2>
             <p>
-              Beim Aufruf dieser Website verarbeitet der Hosting-Anbieter technisch erforderliche
-              Verbindungsdaten. Dazu können insbesondere IP-Adresse, Datum und Uhrzeit des Abrufs,
-              aufgerufene Seite, übertragene Datenmenge, Browsertyp, Betriebssystem und die zuvor
-              besuchte Seite gehören. Die Verarbeitung dient der sicheren und stabilen
-              Bereitstellung der Website sowie der Abwehr von Missbrauch.
+              Diese Website wird über Netlify bereitgestellt. Beim Aufruf der Website verarbeitet
+              der Hosting-Anbieter technisch erforderliche Verbindungsdaten. Dazu können
+              insbesondere die IP-Adresse, Datum und Uhrzeit des Abrufs, die aufgerufene Seite,
+              die übertragene Datenmenge, Browsertyp, Betriebssystem und die zuvor besuchte Seite
+              gehören. Die Verarbeitung dient der sicheren und stabilen Bereitstellung der
+              Website sowie der Abwehr von Missbrauch.
             </p>
             <p>
               Rechtsgrundlage ist das berechtigte Interesse an einem sicheren und funktionsfähigen
-              Webauftritt gemäß Art. 6 Abs. 1 lit. f DSGVO. Anbieter ist die
+              Webauftritt gemäß Art. 6 Abs. 1 lit. f DSGVO. Hosting-Anbieter ist
+              <strong>Netlify, Inc.</strong>, 101 2nd Street, San Francisco, CA 94105, USA. Dabei
+              kann es zu einer Verarbeitung personenbezogener Daten in den USA kommen. Netlify
+              stellt für die Auftragsverarbeitung ein Data Processing Agreement (DPA) zur
+              Verfügung. Weitere Informationen findest du in der
+              <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener">
+                Datenschutzerklärung von Netlify</a
+              > und den
+              <a href="https://www.netlify.com/gdpr-ccpa/" target="_blank" rel="noopener">
+                Informationen von Netlify zu DSGVO und Datenverarbeitung</a
+              >.
+            </p>
+            <p>
+              Die Domainregistrierung und DNS-Verwaltung erfolgen über die
               <strong>World4You Internet Services GmbH</strong>, Wolfgang-Pauli-Straße 2, BT3,
               4020 Linz, Österreich. Weitere Informationen findest du in der
-              <a href="https://www.world4you.com/unternehmen/datenschutzerklaerung" target="_blank" rel="noopener">
+              <a
+                href="https://www.world4you.com/unternehmen/datenschutzerklaerung"
+                target="_blank"
+                rel="noopener"
+              >
                 Datenschutzerklärung von World4You</a
               >.
             </p>

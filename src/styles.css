@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-sand-50: #fcf7ef;
+  --color-sand-50: #fdfcf9;
   --color-sand-100: #f7efe2;
   --color-sand-200: #efe6d4;
   --color-sand-300: #e5d4b6;
@@ -101,4 +101,3 @@
     scroll-behavior: auto;
   }
 }
-

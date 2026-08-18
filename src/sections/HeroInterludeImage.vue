@@ -7,7 +7,7 @@ withDefaults(
     alt?: string
   }>(),
   {
-    src: '/1000074839.jpg',
+    src: '/optimized/open-space-960.jpg',
     alt: 'Pferde in weiter Landschaft – ruhiger Übergang.',
   },
 )
@@ -30,4 +30,3 @@ withDefaults(
     </div>
   </section>
 </template>
-

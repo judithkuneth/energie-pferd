@@ -25,18 +25,13 @@ import SiteFooter from '@/sections/SiteFooter.vue'
           Impressum
         </h1>
 
-        <aside class="mt-8 rounded-2xl border border-gold-300/50 bg-gold-200/25 p-5 text-sm leading-relaxed">
-          <strong class="font-semibold text-taupe-900">Vor Veröffentlichung ergänzen:</strong>
-          Bitte deine vollständige Postanschrift eintragen und prüfen, ob für deine Tätigkeit
-          weitere Pflichtangaben wie Gewerbebehörde, Kammerzugehörigkeit oder Berufsrecht gelten.
-        </aside>
-
         <div class="imprint-content mt-10 space-y-10">
           <section>
             <h2>Medieninhaberin und verantwortlich für den Inhalt</h2>
             <p>
               Judith Kuneth<br />
-              [Vollständige Postanschrift ergänzen]<br />
+              Anzengruberstraße 19/1<br />
+              9020 Klagenfurt<br />
               Österreich
             </p>
             <p>
@@ -51,7 +46,7 @@ import SiteFooter from '@/sections/SiteFooter.vue'
           </section>
 
           <section>
-            <h2>Domain- und Hostinganbieter</h2>
+            <h2>Domain- und DNS-Anbieter</h2>
             <p>
               World4You Internet Services GmbH<br />
               Wolfgang-Pauli-Straße 2, BT3<br />
@@ -59,6 +54,19 @@ import SiteFooter from '@/sections/SiteFooter.vue'
               Österreich<br />
               <a href="https://www.world4you.com/" target="_blank" rel="noopener">
                 www.world4you.com
+              </a>
+            </p>
+          </section>
+
+          <section>
+            <h2>Hosting</h2>
+            <p>
+              Netlify, Inc.<br />
+              101 2nd Street<br />
+              San Francisco, CA 94105<br />
+              USA<br />
+              <a href="https://www.netlify.com/" target="_blank" rel="noopener">
+                www.netlify.com
               </a>
             </p>
           </section>
