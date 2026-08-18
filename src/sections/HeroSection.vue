@@ -79,9 +79,6 @@ const emit = defineEmits<{
           Hier darfst du dir selbst näherkommen – sicher und wertfrei begleitet in der kraftvollen Präsenz der
           Pferde.
         </p>
-        <p class="mt-4 text-sm font-medium tracking-wide text-sand-100/90">
-          Pferdegestützte Begleitung und energetische Körperarbeit · bei Klagenfurt in Österreich
-        </p>
         <!-- <p class="mt-6 max-w-2xl text-base leading-relaxed text-sand-100/90 sm:text-lg">
           Begleitung mit Pferden – Sanft, geerdet, berührend.
         </p>
