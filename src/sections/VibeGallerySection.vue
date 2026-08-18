@@ -20,7 +20,7 @@ const images: VibeImage[] = [
     src: '/optimized/healingsession-daniela-960.jpg',
     srcset:
       '/optimized/healingsession-daniela-480.jpg 480w, /optimized/healingsession-daniela-960.jpg 960w',
-    alt: 'Healing-Session in ruhiger Verbindung mit dem Pferd.',
+    alt: 'Energetische Körperarbeit in ruhiger Verbindung mit dem Pferd.',
   },
   {
     src: '/optimized/leading-774.jpg',

@@ -80,7 +80,7 @@ const stopStyles = [
                 /optimized/about-healingsession-sarah-edited-960.jpg 960w
               "
               sizes="(min-width: 1152px) 460px, (min-width: 768px) 40vw, calc(100vw - 2.5rem)"
-              alt="Healing-Session mit Pferd in ruhiger Begleitung."
+              alt="Energetische Körperarbeit mit Pferd in ruhiger Begleitung."
               class="h-[18rem] w-full object-cover object-right-top sm:h-[22rem] md:h-[20rem]"
               loading="lazy"
               decoding="async"

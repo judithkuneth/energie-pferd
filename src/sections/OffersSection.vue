@@ -11,7 +11,7 @@ type Offer = {
 
 const offers: Offer[] = [
   {
-    title: 'Körper- & Energiarbeit',
+    title: 'Energetische Körperarbeit',
     description:
       'Ganzheitliche Körper- und Energiearbeit in der Präsenz der Pferde – ein Raum zum Ankommen und Loslassen um mit dir selbst in Verbindung zu kommen.',
     note: 'Erden · Spüren · Verbinden',
@@ -20,37 +20,37 @@ const offers: Offer[] = [
         src: '/optimized/about-healingsession-sarah-top-960.jpg',
         srcset:
           '/optimized/about-healingsession-sarah-top-480.jpg 480w, /optimized/about-healingsession-sarah-top-960.jpg 960w',
-        alt: 'Energetische Körperarbeit - Healing-Session mit Sarah.',
+        alt: 'Energetische Körperarbeit mit Sarah und Pferd.',
       },
       {
         src: '/optimized/healingsession-daniela-960.jpg',
         srcset:
           '/optimized/healingsession-daniela-480.jpg 480w, /optimized/healingsession-daniela-960.jpg 960w',
-        alt: 'Energetische Körperarbeit - Healing-Session mit Daniela.',
+        alt: 'Energetische Körperarbeit mit Daniela und Pferd.',
       },
       {
-        src: '/optimized/reiki-session-pasture-horses-960.jpg',
+        src: '/optimized/energetische-koerperarbeit-pferde-weide-960.jpg',
         srcset:
-          '/optimized/reiki-session-pasture-horses-480.jpg 480w, /optimized/reiki-session-pasture-horses-960.jpg 960w',
-        alt: 'Energetische Körperarbeit - Pferde im offenen Raum.',
+          '/optimized/energetische-koerperarbeit-pferde-weide-480.jpg 480w, /optimized/energetische-koerperarbeit-pferde-weide-960.jpg 960w',
+        alt: 'Energetische Körperarbeit mit Pferden auf der Weide.',
       },
       {
-        src: '/optimized/reiki-resting-with-horse-sunlight-960.jpg',
+        src: '/optimized/energetische-koerperarbeit-ruhe-sonnenlicht-960.jpg',
         srcset:
-          '/optimized/reiki-resting-with-horse-sunlight-480.jpg 480w, /optimized/reiki-resting-with-horse-sunlight-960.jpg 960w',
-        alt: 'Energetische Körperarbeit - Ruhe im Sonnenlicht.',
+          '/optimized/energetische-koerperarbeit-ruhe-sonnenlicht-480.jpg 480w, /optimized/energetische-koerperarbeit-ruhe-sonnenlicht-960.jpg 960w',
+        alt: 'Energetische Körperarbeit und Ruhe im Sonnenlicht.',
       },
       {
-        src: '/optimized/reiki-client-resting-between-horses-960.jpg',
+        src: '/optimized/energetische-koerperarbeit-zwischen-pferden-960.jpg',
         srcset:
-          '/optimized/reiki-client-resting-between-horses-480.jpg 480w, /optimized/reiki-client-resting-between-horses-960.jpg 960w',
-        alt: 'Energetische Körperarbeit - Ruhen zwischen Pferden.',
+          '/optimized/energetische-koerperarbeit-zwischen-pferden-480.jpg 480w, /optimized/energetische-koerperarbeit-zwischen-pferden-960.jpg 960w',
+        alt: 'Energetische Körperarbeit und Ruhen zwischen Pferden.',
       },
       {
-        src: '/optimized/reiki-pony-close-resting-client-960.jpg',
+        src: '/optimized/energetische-koerperarbeit-pony-naehe-960.jpg',
         srcset:
-          '/optimized/reiki-pony-close-resting-client-480.jpg 480w, /optimized/reiki-pony-close-resting-client-960.jpg 960w',
-        alt: 'Energetische Körperarbeit - Pony in stiller Naehe.',
+          '/optimized/energetische-koerperarbeit-pony-naehe-480.jpg 480w, /optimized/energetische-koerperarbeit-pony-naehe-960.jpg 960w',
+        alt: 'Energetische Körperarbeit mit einem Pony in stiller Nähe.',
       },
     ],
   },
@@ -130,7 +130,7 @@ const offers: Offer[] = [
         src: '/optimized/healingsession-daniela-960.jpg',
         srcset:
           '/optimized/healingsession-daniela-480.jpg 480w, /optimized/healingsession-daniela-960.jpg 960w',
-        alt: 'Impression – persönliche Healing-Session mit Pferd.',
+        alt: 'Impression – persönliche energetische Körperarbeit mit Pferd.',
       },
       {
         src: '/optimized/vibe-main-960.jpg',

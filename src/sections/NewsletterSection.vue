@@ -76,17 +76,17 @@ const submitNewsletter = async (event: SubmitEvent) => {
 </script>
 
 <template>
-  <section id="impulse" class="pb-8 pt-1 sm:pb-10">
+  <section id="newsletter" class="scroll-mt-24 pb-8 pt-1 sm:pb-10">
     <div class="container-page">
       <RevealOnScroll as="div">
         <div class="mx-auto max-w-2xl border-t border-taupe-200/60 py-6 sm:py-7">
           <div class="space-y-4">
             <div>
               <h2 class="font-serif text-lg font-semibold tracking-tight text-taupe-900 sm:text-xl">
-              Aktuelle Termine & Angebote
+              Neuigkeiten & nächste Termine
               </h2>
               <p class="mt-1.5 max-w-lg text-xs leading-relaxed text-taupe-600 sm:text-sm">
-                Trag dich ein um über aktuelle Angebote und Einblicke informiert zu bleiben.
+               Gerne halte ich dich über neue Termine, Angebote und Einblicke auf dem Laufenden. Trag dich hier ein.
               </p>
             </div>
 
@@ -254,5 +254,11 @@ const submitNewsletter = async (event: SubmitEvent) => {
 .input--hidden {
   position: absolute;
   left: -5000px;
+}
+
+@media (max-width: 639px) {
+  #newsletter:target {
+    min-height: calc(100svh - 4.25rem);
+  }
 }
 </style>

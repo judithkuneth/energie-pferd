@@ -11,6 +11,24 @@ const emit = defineEmits<{
   <section id="top" class="relative isolate overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-taupe-800">
       <picture class="absolute inset-0" aria-hidden="true">
+        <source
+          type="image/avif"
+          srcset="
+            /optimized/hero-20260726-960.avif   960w,
+            /optimized/hero-20260726-1440.avif 1440w,
+            /optimized/hero-20260726-1920.avif 1920w
+          "
+          sizes="100vw"
+        />
+        <source
+          type="image/webp"
+          srcset="
+            /optimized/hero-20260726-960.webp   960w,
+            /optimized/hero-20260726-1440.webp 1440w,
+            /optimized/hero-20260726-1920.webp 1920w
+          "
+          sizes="100vw"
+        />
         <img
           src="/optimized/hero-20260726-960.jpg"
           srcset="
@@ -60,6 +78,9 @@ const emit = defineEmits<{
         >
           Hier darfst du dir selbst näherkommen – sicher und wertfrei begleitet in der kraftvollen Präsenz der
           Pferde.
+        </p>
+        <p class="mt-4 text-sm font-medium tracking-wide text-sand-100/90">
+          Pferdegestützte Begleitung und energetische Körperarbeit · bei Klagenfurt in Österreich
         </p>
         <!-- <p class="mt-6 max-w-2xl text-base leading-relaxed text-sand-100/90 sm:text-lg">
           Begleitung mit Pferden – Sanft, geerdet, berührend.

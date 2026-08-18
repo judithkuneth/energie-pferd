@@ -1,1 +1,8 @@
-/* /index.html 200
+https://www.energie-pferd.at/* https://energie-pferd.at/:splat 301!
+
+/impressum              /index.html  200
+/datenschutz            /index.html  200
+/newsletter             /index.html  200
+/newsletter-erfolgreich /index.html  200
+
+/* /404.html 404
