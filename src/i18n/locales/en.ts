@@ -114,7 +114,7 @@ export default {
     },
   },
   contact: {
-    label: 'CONTACT',
+    label: 'JUDITH',
     title: 'So glad you’re here!',
     booking: '20 min. discovery call',
     bookingNote: 'Online · free · no obligation',

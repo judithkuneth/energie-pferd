@@ -114,7 +114,7 @@ export default {
     },
   },
   contact: {
-    label: 'KONTAKT',
+    label: 'JUDITH',
     title: 'Schön, dass du da bist!',
     booking: '20 Min. Kennenlern-Call',
     bookingNote: 'Online · kostenlos · unverbindlich',
