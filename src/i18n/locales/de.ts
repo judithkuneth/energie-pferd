@@ -38,11 +38,11 @@ export default {
   vibe: {
     title: 'Dieser Raum ist für Dich',
     text:
-      'Ob du Kraft schöpfen willst, Klarheit suchst oder einen Schritt wagen magst – vielleicht bist du auch einfach neugierig. Ich treffe dich dort, wo du gerade bist – mit allem, was gerade da ist.',
+      'Ob du Kraft schöpfen willst, Klarheit suchst oder einen Schritt wagen magst – vielleicht bist du auch einfach neugierig. Ich treffe dich dort, wo du gerade bist.',
     imageAlts: {
       main: 'Ruhige Begegnung – Nähe und Präsenz mit dem Pferd.',
       bodywork: 'Energetische Körperarbeit in ruhiger Verbindung mit dem Pferd.',
-      leading: 'Führung und Verbindung – gemeinsam auf dem Weg.',
+      pasture: 'Energetische Körperarbeit mit Pferden auf der Weide.',
     },
   },
   offers: {
@@ -57,7 +57,7 @@ export default {
     closeTip: 'Tipp: Klick außerhalb schließt das Fenster.',
     items: {
       bodywork: {
-        title: 'Energetische Körperarbeit',
+        title: 'Körper- & Energiearbeit',
         description:
           'Ganzheitliche Körper- und Energiearbeit in der Präsenz der Pferde – ein Raum zum Ankommen und Loslassen um mit dir selbst in Verbindung zu kommen.',
         note: 'Erden · Spüren · Verbinden',
@@ -84,7 +84,7 @@ export default {
         },
       },
       leadership: {
-        title: 'Selbstführung',
+        title: 'Mit Klarheit führen',
         description:
           'Im Dialog mit dem Pferd wird unsere eigene Haltung unmittelbar spürbar. Pferde fordern Klarheit und Präsenz – und zeigen uns, dass Führung immer bei uns selbst beginnt.',
         note: 'Klarheit · Führen · Verkörpern',

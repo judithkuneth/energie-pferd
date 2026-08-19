@@ -30,19 +30,19 @@ export default {
     quote:
       'Horses feel what words leave unspoken. They sense what you carry within, often long before you become aware of it yourself.',
     text:
-      'You are invited to arrive just as you are, with whatever is present for you right now. Together with the horses, I gently accompany you as you reconnect with yourself on a deeper level – feeling what wants to be felt and letting go of what no longer serves you.',
+      'Come as you are. Together with the horses, I accompany you as you reconnect with yourself on a deeper level – feeling what wants to be felt and letting go of what no longer serves you.',
     textSecondary:
-      'This is not about knowing more. It is about allowing yourself to experience something deeply enough for it to become your own inner wisdom. What you truly feel and experience becomes part of you – something you can carry into your everyday life and embody in your own way.',
+      'This is not about knowing more. It is about reconnecting with your own wisdom and intuition. What you truly feel and experience becomes part of you – and finds its way into how you live and move through the world.',
     imageAlt: 'Holistic energy and bodywork with a horse in a calm, supported setting.',
   },
   vibe: {
     title: 'This space is for you',
     text:
-      'Whether you seek a place to recharge, are looking for clarity, or perhaps you are simply curious – I meet you where you are, with whatever is present right now.',
+      'Whether you seek a place to recharge, are looking for clarity, or perhaps you are simply curious – you are warmly welcome here.',
     imageAlts: {
       main: 'A quiet encounter – closeness and presence with a horse.',
       bodywork: 'Holistic energy and bodywork in a calm connection with a horse.',
-      leading: 'Leadership and connection – moving forward together.',
+      pasture: 'Holistic energy and bodywork with horses in the pasture.',
     },
   },
   offers: {
@@ -84,7 +84,7 @@ export default {
         },
       },
       leadership: {
-        title: 'Self-leadership',
+        title: 'Leading from Within',
         description:
           'In conversation with a horse, the way we carry ourselves becomes immediately tangible. Horses ask for clarity and presence – and show us that leadership always begins within ourselves.',
         note: 'Clarity · Lead · Embody',

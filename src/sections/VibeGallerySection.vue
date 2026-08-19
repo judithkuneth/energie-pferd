@@ -27,9 +27,10 @@ const images = computed<VibeImage[]>(() => [
     alt: t('vibe.imageAlts.bodywork'),
   },
   {
-    src: '/optimized/leading-774.jpg',
-    srcset: '/optimized/leading-480.jpg 480w, /optimized/leading-774.jpg 774w',
-    alt: t('vibe.imageAlts.leading'),
+    src: '/optimized/energetische-koerperarbeit-pferde-weide-960.jpg',
+    srcset:
+      '/optimized/energetische-koerperarbeit-pferde-weide-480.jpg 480w, /optimized/energetische-koerperarbeit-pferde-weide-960.jpg 960w',
+    alt: t('vibe.imageAlts.pasture'),
   },
 ])
 </script>
@@ -86,7 +87,7 @@ const images = computed<VibeImage[]>(() => [
                 :srcset="images[2]?.srcset"
                 :sizes="images[2]?.sizes"
                 :alt="images[2]?.alt"
-                class="h-[13.5rem] w-full object-cover sm:h-[13.5rem]"
+                class="h-[13.5rem] w-full object-cover object-[center_72%] sm:h-[13.5rem]"
                 loading="lazy"
                 decoding="async"
               />
