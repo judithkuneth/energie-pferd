@@ -1,10 +1,19 @@
-/impressum
+/legal-notice
   X-Robots-Tag: noindex, follow
 
-/datenschutz
+/privacy
   X-Robots-Tag: noindex, follow
 
-/newsletter-erfolgreich
+/newsletter-success
+  X-Robots-Tag: noindex, nofollow
+
+/en/legal-notice
+  X-Robots-Tag: noindex, follow
+
+/en/privacy
+  X-Robots-Tag: noindex, follow
+
+/en/newsletter-success
   X-Robots-Tag: noindex, nofollow
 
 /404.html

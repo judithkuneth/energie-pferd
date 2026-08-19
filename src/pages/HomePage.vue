@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import SiteNav from '@/components/SiteNav.vue'
 import BookingModal from '@/components/BookingModal.vue'
 import HeroSection from '@/sections/HeroSection.vue'
@@ -11,6 +12,7 @@ import NewsletterSection from '@/sections/NewsletterSection.vue'
 import SiteFooter from '@/sections/SiteFooter.vue'
 
 const isBookingOpen = ref(false)
+const { t } = useI18n()
 </script>
 
 <template>
@@ -19,7 +21,7 @@ const isBookingOpen = ref(false)
       href="#top"
       class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-taupe-800 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-sand-50"
     >
-      Zum Inhalt springen
+      {{ t('navigation.skipToContent') }}
     </a>
 
     <SiteNav @book="isBookingOpen = true" />

@@ -1,21 +1,20 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import logoMark from '@/assets/brand/energie-pferd-mark-128.png'
+import { useSiteLocale } from '@/composables/useSiteLocale'
 
 const emit = defineEmits<{
   book: []
 }>()
 
-type NavItem = { label: string; href: string }
+const { t } = useI18n()
+const { alternateLocale, alternateLocation, homeLocation } = useSiteLocale()
 
-const items: NavItem[] = [
-  // { label: 'Über mich', href: '#ueber-mich' },
-  // { label: 'Vibe Gallery', href: '#vibe' },
-  { label: 'Angebote', href: '#angebote' },
-  // { label: 'Philosophie', href: '#philosophie' },
-  // { label: 'Erfahrungen', href: '#erfahrungen' },
-  { label: 'Kontakt', href: '#kontakt' }
-]
+const items = computed(() => [
+  { label: t('navigation.offers'), href: '#angebote' },
+  { label: t('navigation.contact'), href: '#kontakt' },
+])
 
 const open = ref(false)
 const menuId = 'site-nav-menu'
@@ -36,8 +35,8 @@ function openBooking() {
 <template>
   <header class="sticky top-0 z-50 border-b border-taupe-200/40 bg-sand-50/75 backdrop-blur">
     <div class="container-page flex items-center justify-between gap-4 py-3">
-      <a
-        href="#top"
+      <RouterLink
+        :to="{ ...homeLocation, hash: '#top' }"
         class="group inline-flex items-center gap-2 no-underline sm:gap-3"
         @click="close"
       >
@@ -57,12 +56,12 @@ function openBooking() {
         <!-- <span class="hidden text-xs font-medium tracking-[0.22em] text-taupe-600 sm:inline">
           HEALING SPACE
         </span> -->
-        <span class="sr-only">Zurück nach oben</span>
-      </a>
+        <span class="sr-only">{{ t('navigation.backToTop') }}</span>
+      </RouterLink>
 
       <nav
         class="hidden items-center gap-6 md:flex"
-        aria-label="Hauptnavigation"
+        :aria-label="t('navigation.main')"
       >
         <a
           v-for="item in items"
@@ -77,19 +76,30 @@ function openBooking() {
           class="rounded-full bg-primary-500 px-4 py-2 text-sm font-medium text-sand-50 no-underline transition hover:bg-primary-600"
           @click="openBooking"
         >
-          20 Min. Kennenlern-Call
+          {{ t('navigation.booking') }}
         </button>
+        <RouterLink
+          :to="alternateLocation"
+          class="rounded-full border border-taupe-300/70 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-taupe-700 no-underline transition hover:border-primary-500/50 hover:text-primary-600"
+          :aria-label="
+            alternateLocale === 'en'
+              ? t('navigation.switchToEnglish')
+              : t('navigation.switchToGerman')
+          "
+        >
+          {{ alternateLocale.toUpperCase() }}
+        </RouterLink>
       </nav>
 
       <button
         class="inline-flex items-center justify-center rounded-full border border-taupe-200/70 bg-white/60 px-3 py-2 text-sm font-medium text-taupe-900 shadow-sm transition hover:bg-white md:hidden"
         type="button"
-        aria-label="Menü öffnen"
+        :aria-label="t('navigation.menuOpen')"
         :aria-expanded="open ? 'true' : 'false'"
         :aria-controls="menuId"
         @click="open = !open"
       >
-        Menü
+        {{ t('navigation.menu') }}
       </button>
     </div>
 
@@ -118,8 +128,15 @@ function openBooking() {
           class="mt-2 inline-flex items-center justify-center rounded-full bg-primary-500 px-4 py-3 text-sm font-medium text-sand-50 no-underline transition hover:bg-primary-600"
           @click="openBooking"
         >
-          20 Min. Kennenlern-Call
+          {{ t('navigation.booking') }}
         </button>
+        <RouterLink
+          :to="alternateLocation"
+          class="mt-1 inline-flex items-center justify-center rounded-full border border-taupe-300/70 px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-taupe-700 no-underline"
+          @click="close"
+        >
+          {{ alternateLocale === 'en' ? 'English' : 'Deutsch' }}
+        </RouterLink>
       </div>
     </div>
   </header>

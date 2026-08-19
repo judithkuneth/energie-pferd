@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import RevealOnScroll from '@/components/RevealOnScroll.vue'
 
 type VibeImage = {
@@ -8,26 +10,28 @@ type VibeImage = {
   alt: string
 }
 
-const images: VibeImage[] = [
+const { t } = useI18n()
+
+const images = computed<VibeImage[]>(() => [
   {
     src: '/optimized/vibe-main-960.jpg',
     srcset:
       '/optimized/vibe-main-640.jpg 640w, /optimized/vibe-main-960.jpg 960w, /optimized/vibe-main-1280.jpg 1280w',
     sizes: '(min-width: 1152px) 672px, (min-width: 768px) 58vw, calc(100vw - 2.5rem)',
-    alt: 'Ruhige Begegnung – Nähe und Präsenz mit dem Pferd.',
+    alt: t('vibe.imageAlts.main'),
   },
   {
     src: '/optimized/healingsession-daniela-960.jpg',
     srcset:
       '/optimized/healingsession-daniela-480.jpg 480w, /optimized/healingsession-daniela-960.jpg 960w',
-    alt: 'Energetische Körperarbeit in ruhiger Verbindung mit dem Pferd.',
+    alt: t('vibe.imageAlts.bodywork'),
   },
   {
     src: '/optimized/leading-774.jpg',
     srcset: '/optimized/leading-480.jpg 480w, /optimized/leading-774.jpg 774w',
-    alt: 'Führung und Verbindung – gemeinsam auf dem Weg.',
+    alt: t('vibe.imageAlts.leading'),
   },
-]
+])
 </script>
 
 <template>
@@ -37,13 +41,11 @@ const images: VibeImage[] = [
         <h2
           class="mt-4 font-serif text-2xl font-semibold tracking-tight text-taupe-900 sm:text-3xl"
         >
-          Dieser Raum ist für Dich
+          {{ t('vibe.title') }}
         </h2>
 
         <p class="mt-4 text-lg leading-relaxed text-taupe-700">
-          Ob du Kraft schöpfen willst, Klarheit suchst oder einen Schritt wagen magst – vielleicht
-          bist du auch einfach neugierig. Ich treffe dich dort, wo du gerade bist – mit allem, was
-          gerade da ist.
+          {{ t('vibe.text') }}
         </p>
       </RevealOnScroll>
 

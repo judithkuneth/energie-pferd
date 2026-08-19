@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import RevealOnScroll from '@/components/RevealOnScroll.vue'
 
 const emit = defineEmits<{
@@ -10,6 +11,7 @@ const instagramUrl = 'https://www.instagram.com/judith.energie.pferd/'
 const phoneNumberRaw = '+43 676 83555785'
 const whatsappNumber = phoneNumberRaw.replace(/\D/g, '')
 const whatsappUrl = `https://wa.me/${whatsappNumber}`
+const { t } = useI18n()
 </script>
 
 <template>
@@ -33,7 +35,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`
                 src="/optimized/portrait-320.jpg"
                 srcset="/optimized/portrait-320.jpg 320w, /optimized/portrait-480.jpg 480w"
                 sizes="9rem"
-                alt="Portrait in der Natur."
+                :alt="t('contact.portraitAlt')"
                 class="h-32 w-32 rounded-full object-cover sm:h-36 sm:w-36"
                 loading="lazy"
                 decoding="async"
@@ -41,11 +43,13 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`
             </div>
           </figure>
 
-          <p class="text-xs font-semibold tracking-[0.28em] text-taupe-600">KONTAKT</p>
+          <p class="text-xs font-semibold tracking-[0.28em] text-taupe-600">
+            {{ t('contact.label') }}
+          </p>
           <h2
             class="mt-4 font-serif text-3xl font-semibold tracking-tight text-taupe-900 sm:text-4xl"
           >
-            Schön, dass du da bist!
+            {{ t('contact.title') }}
           </h2>
           <div class="mt-8">
             <button
@@ -53,16 +57,15 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`
               class="inline-flex items-center justify-center rounded-full bg-primary-500 px-6 py-3 text-sm font-medium text-sand-50 transition hover:bg-primary-600"
               @click="emit('book')"
             >
-              20 Min. Kennenlern-Call
+              {{ t('contact.booking') }}
             </button>
             <p class="mt-3 text-xs font-medium tracking-wide text-taupe-600">
-              Online · kostenlos · unverbindlich
+              {{ t('contact.bookingNote') }}
             </p>
           </div>
 
           <p class="mx-auto mt-8 max-w-xl text-left text-sm leading-relaxed text-taupe-700">
-            Bereit loszulegen? Ich freue mich, von dir zu hören. Schreib mir ein paar Zeilen über
-            dich, dein Anliegen oder das, was dich gerade bewegt.
+            {{ t('contact.intro') }}
           </p>
 
           <div class="mx-auto mt-6 max-w-xl space-y-4 text-sm">
@@ -72,7 +75,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`
                 class="inline-flex items-center justify-between gap-4 rounded-xl border border-taupe-200/60 bg-white/60 px-4 py-3 font-medium text-taupe-900 no-underline transition hover:border-primary-500/45 hover:ring-2 hover:ring-primary-500/20"
                 :href="`mailto:${email}`"
               >
-                <span>E‑Mail</span>
+                <span>{{ t('contact.email') }}</span>
                 <span class="truncate text-taupe-700">{{ email }}</span>
               </a>
               <a
@@ -99,14 +102,17 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}`
                 rel="noopener"
                 class="flex flex-col gap-1 rounded-xl border border-taupe-200/60 bg-white/60 px-4 py-3 text-left font-medium text-taupe-900 no-underline transition hover:border-primary-500/45 hover:ring-2 hover:ring-primary-500/20 sm:flex-row sm:items-center sm:justify-between sm:gap-4"
               >
-                <span> Adresse*</span>
+                <span>{{ t('contact.address') }}</span>
                 <span class="text-taupe-700 sm:text-right">
-                9555 Glanegg, Kärnten · rund 20 Minuten von Klagenfurt
+                  {{ t('contact.location') }}
                 </span>
               </a>
             </div>
             <p class="text-left text-xs leading-relaxed text-taupe-600">
-              * Die genaue Adresse erhältst du nach der Terminvereinbarung.
+              {{ t('contact.addressNote') }}
+            </p>
+            <p class="text-left text-xs leading-relaxed text-taupe-600">
+              {{ t('contact.travelNote') }}
             </p>
           </div>
         </RevealOnScroll>

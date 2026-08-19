@@ -1,163 +1,170 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import RevealOnScroll from '@/components/RevealOnScroll.vue'
 
 type Offer = {
+  id: string
   title: string
   description: string
   note: string
   impressions?: { src: string; srcset?: string; alt: string }[]
 }
 
-const offers: Offer[] = [
+const { t } = useI18n()
+
+const offers = computed<Offer[]>(() => [
   {
-    title: 'Energetische Körperarbeit',
-    description:
-      'Ganzheitliche Körper- und Energiearbeit in der Präsenz der Pferde – ein Raum zum Ankommen und Loslassen um mit dir selbst in Verbindung zu kommen.',
-    note: 'Erden · Spüren · Verbinden',
+    id: 'bodywork',
+    title: t('offers.items.bodywork.title'),
+    description: t('offers.items.bodywork.description'),
+    note: t('offers.items.bodywork.note'),
     impressions: [
       {
         src: '/optimized/about-healingsession-sarah-top-960.jpg',
         srcset:
           '/optimized/about-healingsession-sarah-top-480.jpg 480w, /optimized/about-healingsession-sarah-top-960.jpg 960w',
-        alt: 'Energetische Körperarbeit mit Sarah und Pferd.',
+        alt: t('offers.items.bodywork.alts.sarah'),
       },
       {
         src: '/optimized/healingsession-daniela-960.jpg',
         srcset:
           '/optimized/healingsession-daniela-480.jpg 480w, /optimized/healingsession-daniela-960.jpg 960w',
-        alt: 'Energetische Körperarbeit mit Daniela und Pferd.',
+        alt: t('offers.items.bodywork.alts.daniela'),
       },
       {
         src: '/optimized/energetische-koerperarbeit-pferde-weide-960.jpg',
         srcset:
           '/optimized/energetische-koerperarbeit-pferde-weide-480.jpg 480w, /optimized/energetische-koerperarbeit-pferde-weide-960.jpg 960w',
-        alt: 'Energetische Körperarbeit mit Pferden auf der Weide.',
+        alt: t('offers.items.bodywork.alts.pasture'),
       },
       {
         src: '/optimized/energetische-koerperarbeit-ruhe-sonnenlicht-960.jpg',
         srcset:
           '/optimized/energetische-koerperarbeit-ruhe-sonnenlicht-480.jpg 480w, /optimized/energetische-koerperarbeit-ruhe-sonnenlicht-960.jpg 960w',
-        alt: 'Energetische Körperarbeit und Ruhe im Sonnenlicht.',
+        alt: t('offers.items.bodywork.alts.sunlight'),
       },
       {
         src: '/optimized/energetische-koerperarbeit-zwischen-pferden-960.jpg',
         srcset:
           '/optimized/energetische-koerperarbeit-zwischen-pferden-480.jpg 480w, /optimized/energetische-koerperarbeit-zwischen-pferden-960.jpg 960w',
-        alt: 'Energetische Körperarbeit und Ruhen zwischen Pferden.',
+        alt: t('offers.items.bodywork.alts.between'),
       },
       {
         src: '/optimized/energetische-koerperarbeit-pony-naehe-960.jpg',
         srcset:
           '/optimized/energetische-koerperarbeit-pony-naehe-480.jpg 480w, /optimized/energetische-koerperarbeit-pony-naehe-960.jpg 960w',
-        alt: 'Energetische Körperarbeit mit einem Pony in stiller Nähe.',
+        alt: t('offers.items.bodywork.alts.pony'),
       },
     ],
   },
   {
-    title: 'Spüren und Vertrauen',
-    description:
-      'Ein Raum zum Innehalten und Wahrnehmen, ohne etwas verändern zu müssen. Hier darfst du deiner Intuition wieder näherkommen und lernen ihr zu vertrauen.',
-    note: 'Wahrnehmen · Fühlen · Vertrauen',
+    id: 'trust',
+    title: t('offers.items.trust.title'),
+    description: t('offers.items.trust.description'),
+    note: t('offers.items.trust.note'),
     impressions: [
       {
         src: '/optimized/vibe-main-960.jpg',
         srcset:
           '/optimized/vibe-main-640.jpg 640w, /optimized/vibe-main-960.jpg 960w, /optimized/vibe-main-1280.jpg 1280w',
-        alt: 'Impression – sanfte Begegnung.',
+        alt: t('offers.items.trust.alts.meeting'),
       },
       {
         src: '/optimized/stillness-space-960.jpg',
         srcset: '/optimized/stillness-space-480.jpg 480w, /optimized/stillness-space-960.jpg 960w',
-        alt: 'Impression – stille Präsenz im Raum.',
+        alt: t('offers.items.trust.alts.stillness'),
       },
       {
         src: '/optimized/pasture-meeting-960.jpg',
         srcset: '/optimized/pasture-meeting-480.jpg 480w, /optimized/pasture-meeting-960.jpg 960w',
-        alt: 'Impression – Begegnung auf der Weide.',
+        alt: t('offers.items.trust.alts.pasture'),
       },
       {
         src: '/optimized/vibe-nature-800.jpg',
         srcset: '/optimized/vibe-nature-480.jpg 480w, /optimized/vibe-nature-800.jpg 800w',
-        alt: 'Impression – Freiheit in der Natur.',
+        alt: t('offers.items.trust.alts.nature'),
       },
       {
         src: '/optimized/open-space-960.jpg',
         srcset: '/optimized/open-space-480.jpg 480w, /optimized/open-space-960.jpg 960w',
-        alt: 'Impression – Pferd im offenen Raum.',
+        alt: t('offers.items.trust.alts.open'),
       },
     ],
   },
 
   {
-    title: 'Selbstführung',
-    description:
-      'Im Dialog mit dem Pferd wird unsere eigene Haltung unmittelbar spürbar. Pferde fordern Klarheit und Präsenz – und zeigen uns, dass Führung immer bei uns selbst beginnt.',
-    note: 'Klarheit · Führen · Verkörpern',
+    id: 'leadership',
+    title: t('offers.items.leadership.title'),
+    description: t('offers.items.leadership.description'),
+    note: t('offers.items.leadership.note'),
     impressions: [
       {
         src: '/optimized/dialog-meeting-800.jpg',
         srcset: '/optimized/dialog-meeting-480.jpg 480w, /optimized/dialog-meeting-800.jpg 800w',
-        alt: 'Impression – Begegnung im Dialog.',
+        alt: t('offers.items.leadership.alts.dialogue'),
       },
       {
         src: '/optimized/leading-774.jpg',
         srcset: '/optimized/leading-480.jpg 480w, /optimized/leading-774.jpg 774w',
-        alt: 'Impression – Führung und Verbindung.',
+        alt: t('offers.items.leadership.alts.leading'),
       },
     ],
   },
   {
-    title: 'Persönliche Begleitung',
-    description:
-      'Ein geschützter Raum für dich und alles, was dich gerade bewegt – vor Ort oder online. Einmalig oder über einen längeren Zeitraum.',
-    note: 'Begegnung · Reflexion · Begleitung',
+    id: 'guidance',
+    title: t('offers.items.guidance.title'),
+    description: t('offers.items.guidance.description'),
+    note: t('offers.items.guidance.note'),
     impressions: [],
   },
   {
-    title: '1:1 Tages-Retreat',
-    description:
-      'Dieser Tag gehört ganz dir. Wir gestalten ihn rund um das, was gerade Raum bekommen darf – mit Körperarbeit, Stille, Dialog und Zeit in der Natur und mit den Pferden.',
-      note: 'Zeit für dich',
+    id: 'retreat',
+    title: t('offers.items.retreat.title'),
+    description: t('offers.items.retreat.description'),
+    note: t('offers.items.retreat.note'),
     impressions: [
       {
         src: '/optimized/about-healingsession-sarah-top-960.jpg',
         srcset:
           '/optimized/about-healingsession-sarah-top-480.jpg 480w, /optimized/about-healingsession-sarah-top-960.jpg 960w',
-        alt: 'Impression – energetische Körperarbeit mit Pferd in persönlicher Begleitung.',
+        alt: t('offers.items.retreat.alts.bodywork'),
       },
       {
         src: '/optimized/healingsession-daniela-960.jpg',
         srcset:
           '/optimized/healingsession-daniela-480.jpg 480w, /optimized/healingsession-daniela-960.jpg 960w',
-        alt: 'Impression – persönliche energetische Körperarbeit mit Pferd.',
+        alt: t('offers.items.retreat.alts.daniela'),
       },
       {
         src: '/optimized/vibe-main-960.jpg',
         srcset:
           '/optimized/vibe-main-640.jpg 640w, /optimized/vibe-main-960.jpg 960w, /optimized/vibe-main-1280.jpg 1280w',
-        alt: 'Impression – achtsame Begegnung mit dem Pferd.',
+        alt: t('offers.items.retreat.alts.meeting'),
       },
       {
         src: '/optimized/open-space-960.jpg',
         srcset: '/optimized/open-space-480.jpg 480w, /optimized/open-space-960.jpg 960w',
-        alt: 'Impression – offener Raum mit den Pferden.',
+        alt: t('offers.items.retreat.alts.open'),
       },
     ],
   },
-]
+])
 
 const modalImageSizes = '(min-width: 1024px) 280px, (min-width: 640px) 45vw, calc(100vw - 4rem)'
 
-const selectedOffer = ref<Offer | null>(null)
+const selectedOfferId = ref<string | null>(null)
+const selectedOffer = computed(
+  () => offers.value.find((offer) => offer.id === selectedOfferId.value) ?? null,
+)
 const isModalOpen = computed(() => selectedOffer.value !== null)
 
 function openOffer(offer: Offer) {
-  selectedOffer.value = offer
+  selectedOfferId.value = offer.id
 }
 
 function closeOffer() {
-  selectedOffer.value = null
+  selectedOfferId.value = null
 }
 </script>
 
@@ -165,14 +172,15 @@ function closeOffer() {
   <section id="angebote" class="py-12 sm:py-16">
     <div class="container-page">
       <RevealOnScroll as="div">
-        <p class="text-xs font-semibold tracking-[0.28em] text-taupe-600">ANGEBOTE</p>
+        <p class="text-xs font-semibold tracking-[0.28em] text-taupe-600">
+          {{ t('offers.label') }}
+        </p>
         <div class="mt-4 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <h2 class="font-serif text-3xl font-semibold tracking-tight text-taupe-900 sm:text-4xl">
-            Räume der Begegnung
+            {{ t('offers.title') }}
           </h2>
           <p class="max-w-xl text-sm leading-relaxed text-taupe-700">
-            Wähle, was dich anspricht oder schreib mir, und wir finden gemeinsam den passenden
-            Anfang.
+            {{ t('offers.intro') }}
           </p>
         </div>
       </RevealOnScroll>
@@ -180,7 +188,7 @@ function closeOffer() {
       <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         <RevealOnScroll
           v-for="(offer, idx) in offers"
-          :key="offer.title"
+          :key="offer.id"
           as="button"
           type="button"
           class="group card-surface cursor-pointer p-6 text-left transition hover:-translate-y-1 hover:border-primary-500/45 hover:ring-1 hover:ring-primary-500/25 hover:shadow-none"
@@ -194,8 +202,8 @@ function closeOffer() {
               </h3>
               <span
                 class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-taupe-200/70 bg-sand-100/70 text-taupe-700 transition group-hover:border-primary-500/45 group-hover:bg-sand-50 group-hover:text-primary-600"
-                aria-label="Impressionen ansehen"
-                title="Impressionen ansehen"
+                :aria-label="t('offers.viewImpressions')"
+                :title="t('offers.viewImpressions')"
               >
                 <span class="text-base leading-none" aria-hidden="true">↗</span>
               </span>
@@ -222,14 +230,16 @@ function closeOffer() {
           role="dialog"
           aria-modal="true"
           :aria-label="
-            selectedOffer?.title ? `Impressionen zu ${selectedOffer.title}` : 'Impressionen'
+            selectedOffer?.title
+              ? t('offers.impressionsFor', { title: selectedOffer.title })
+              : t('offers.impressions')
           "
           @keydown.esc="closeOffer"
         >
           <button
             type="button"
             class="fixed inset-0 bg-taupe-900/40 backdrop-blur-sm"
-            aria-label="Schließen"
+            :aria-label="t('common.close')"
             @click="closeOffer"
           />
 
@@ -241,7 +251,9 @@ function closeOffer() {
             >
               <div class="flex items-start justify-between gap-4 sm:gap-6">
                 <div class="min-w-0">
-                  <p class="text-xs font-semibold tracking-[0.28em] text-taupe-600">IMPRESSIONEN</p>
+                  <p class="text-xs font-semibold tracking-[0.28em] text-taupe-600">
+                    {{ t('offers.impressions') }}
+                  </p>
                   <h3
                     class="mt-2 font-serif text-2xl font-semibold tracking-tight text-taupe-900 sm:mt-3 sm:text-3xl"
                   >
@@ -251,7 +263,7 @@ function closeOffer() {
                 <button
                   type="button"
                   class="sticky top-0 z-10 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-taupe-200/70 bg-white/90 text-taupe-800 transition hover:bg-white"
-                  aria-label="Schließen"
+                  :aria-label="t('common.close')"
                   @click="closeOffer"
                 >
                   ✕
@@ -291,10 +303,10 @@ function closeOffer() {
                   class="inline-flex items-center justify-center rounded-full bg-primary-500 px-5 py-3 text-sm font-medium text-sand-50 no-underline transition hover:bg-primary-600"
                   @click="closeOffer"
                 >
-                  Unverbindlich anfragen
+                  {{ t('offers.inquire') }}
                 </a>
                 <p class="hidden text-xs leading-relaxed text-taupe-600 sm:block">
-                  Tipp: Klick außerhalb schließt das Fenster.
+                  {{ t('offers.closeTip') }}
                 </p>
               </div>
             </div>

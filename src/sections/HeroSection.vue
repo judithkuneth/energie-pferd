@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import PrimaryButton from '@/components/PrimaryButton.vue'
 import RevealOnScroll from '@/components/RevealOnScroll.vue'
+import { useI18n } from 'vue-i18n'
 
 const emit = defineEmits<{
   book: []
 }>()
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -64,12 +67,12 @@ const emit = defineEmits<{
         <p
           class="mb-4 max-w-2xl text-xs font-medium leading-relaxed tracking-[0.06em] text-sand-100/80 sm:text-sm"
         >
-          Pferdegestützte Begleitung · Ganzheitliche Energie- &amp; Körperarbeit
+          {{ t('hero.eyebrow') }}
         </p>
         <h1
           class="max-w-4xl font-serif text-4xl font-semibold leading-[1.06] tracking-tight text-sand-50 sm:text-6xl"
         >
-          Begegne dir selbst im Raum der Pferde
+          {{ t('hero.title') }}
         </h1>
 
         <!-- <p class="mt-6 max-w-2xl text-base leading-relaxed text-sand-100/90 sm:text-lg">
@@ -81,8 +84,7 @@ const emit = defineEmits<{
         <p
           class="hero-copy mt-6 w-fit max-w-2xl py-3 text-base leading-relaxed text-sand-50/95 sm:text-lg"
         >
-          Hier darfst du dir selbst näherkommen – sicher und wertfrei begleitet in der kraftvollen Präsenz der
-          Pferde.
+          {{ t('hero.copy') }}
         </p>
         <!-- <p class="mt-6 max-w-2xl text-base leading-relaxed text-sand-100/90 sm:text-lg">
           Begleitung mit Pferden – Sanft, geerdet, berührend.
@@ -97,7 +99,7 @@ const emit = defineEmits<{
         <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
           <!-- <PrimaryButton href="#angebote">Angebote entdecken</PrimaryButton> -->
           <PrimaryButton variant="ghost" @click="emit('book')">
-            20 Min. Kennenlern-Call
+            {{ t('hero.booking') }}
           </PrimaryButton>
         </div>
       </RevealOnScroll>

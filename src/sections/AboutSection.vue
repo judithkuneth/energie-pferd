@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import RevealOnScroll from '@/components/RevealOnScroll.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const pillars = [
   {
@@ -45,8 +48,7 @@ const stopStyles = [
             Ohne Bewertung, dafür mit Klarheit.
           </p> -->
           <p class="font-serif text-lg leading-loose tracking-tight text-taupe-900 sm:text-2xl">
-            Pferde nehmen wahr, was Worte nicht sagen. Sie spüren, was du in dir trägst, oft noch
-            bevor du selbst es bemerkst.
+            {{ t('about.quote') }}
           </p>
         </blockquote>
 
@@ -59,14 +61,17 @@ const stopStyles = [
           Wachstum endet nicht beim Verstehen – deine neue Wahrheit will gelebt werden.
         </p> -->
         <div class="grid gap-6 md:grid-cols-12 md:items-center">
-          <p
-            class="text-lg leading-[1.75] text-taupe-700 sm:text-[1.1875rem] md:col-span-7"
-          >
-            Gemeinsam mit den Pferden begleite ich dich durch das, was gerade präsent ist. Hier
-            darfst du mit dir selbst in Verbindung kommen, wahrnehmen, erfahren, ausprobieren,
-            entdecken und loslassen. Denn was hier spürbar wird, möchte nicht nur erkannt, sondern
-            auch im Alltag gelebt und verkörpert werden.
-          </p>
+          <div class="space-y-5 md:col-span-7">
+            <p class="text-lg leading-[1.75] text-taupe-700 sm:text-[1.1875rem]">
+              {{ t('about.text') }}
+            </p>
+            <p
+              v-if="t('about.textSecondary')"
+              class="text-base leading-[1.75] text-taupe-700 sm:text-lg"
+            >
+              {{ t('about.textSecondary') }}
+            </p>
+          </div>
 
           <RevealOnScroll
             as="figure"
@@ -80,7 +85,7 @@ const stopStyles = [
                 /optimized/about-healingsession-sarah-edited-960.jpg 960w
               "
               sizes="(min-width: 1152px) 460px, (min-width: 768px) 40vw, calc(100vw - 2.5rem)"
-              alt="Energetische Körperarbeit mit Pferd in ruhiger Begleitung."
+              :alt="t('about.imageAlt')"
               class="h-[18rem] w-full object-cover object-right-top sm:h-[22rem] md:h-[20rem]"
               loading="lazy"
               decoding="async"

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import RevealOnScroll from '@/components/RevealOnScroll.vue'
+import { useSiteLocale } from '@/composables/useSiteLocale'
 
 type BrevoResponse = {
   success?: boolean
@@ -11,6 +13,8 @@ type BrevoResponse = {
 const submissionStatus = ref<'idle' | 'success' | 'error'>('idle')
 const submissionMessage = ref('')
 const isSubmitting = ref(false)
+const { t } = useI18n()
+const { locale, privacyLocation } = useSiteLocale()
 
 const preventInvalidSubmission = (event: Event) => {
   const form = event.currentTarget
@@ -51,24 +55,17 @@ const submitNewsletter = async (event: SubmitEvent) => {
 
     const result = (await response.json()) as BrevoResponse
     if (!result.success) {
-      const fieldError = result.errors ? Object.values(result.errors)[0] : undefined
       submissionStatus.value = 'error'
-      submissionMessage.value =
-        result.message ||
-        fieldError ||
-        'Hopsa, deine Anmeldung konnte nicht gespeichert werden. Bitte versuche es erneut.'
+      submissionMessage.value = t('newsletter.error')
       return
     }
 
     submissionStatus.value = 'success'
-    submissionMessage.value =
-      result.message ||
-      'Fast geschafft! Bitte bestätige deine Anmeldung über den Link in deinem Postfach.'
+    submissionMessage.value = t('newsletter.success')
     form.reset()
   } catch {
     submissionStatus.value = 'error'
-    submissionMessage.value =
-      'Hopsa, deine Anmeldung konnte nicht gespeichert werden. Bitte versuche es erneut.'
+    submissionMessage.value = t('newsletter.error')
   } finally {
     isSubmitting.value = false
   }
@@ -83,10 +80,10 @@ const submitNewsletter = async (event: SubmitEvent) => {
           <div class="space-y-4">
             <div>
               <h2 class="font-serif text-lg font-semibold tracking-tight text-taupe-900 sm:text-xl">
-              Neuigkeiten & nächste Termine
+              {{ t('newsletter.title') }}
               </h2>
               <p class="mt-1.5 max-w-lg text-xs leading-relaxed text-taupe-600 sm:text-sm">
-               Gerne halte ich dich über neue Termine, Angebote und Einblicke auf dem Laufenden. Trag dich hier ein.
+                {{ t('newsletter.intro') }}
               </p>
             </div>
 
@@ -105,7 +102,9 @@ const submitNewsletter = async (event: SubmitEvent) => {
                     <div class="sib-input min-w-0 flex-1">
                       <div class="form__entry entry_block">
                         <div class="form__label-row">
-                          <label class="entry__label sr-only" for="EMAIL">E-Mail-Adresse</label>
+                          <label class="entry__label sr-only" for="EMAIL">
+                            {{ t('newsletter.emailLabel') }}
+                          </label>
                           <div class="entry__field">
                             <input
                               id="EMAIL"
@@ -113,7 +112,7 @@ const submitNewsletter = async (event: SubmitEvent) => {
                               type="email"
                               name="EMAIL"
                               autocomplete="email"
-                              placeholder="Deine E-Mail-Adresse"
+                              :placeholder="t('newsletter.emailPlaceholder')"
                               data-required="true"
                               required
                             />
@@ -142,7 +141,7 @@ const submitNewsletter = async (event: SubmitEvent) => {
                           d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
                         />
                       </svg>
-                      {{ isSubmitting ? 'Wird angemeldet …' : 'Anmelden' }}
+                      {{ isSubmitting ? t('newsletter.submitting') : t('newsletter.submit') }}
                     </button>
                   </div>
 
@@ -154,10 +153,9 @@ const submitNewsletter = async (event: SubmitEvent) => {
                       class="mt-0.5 h-4 w-4 shrink-0 accent-primary-500"
                     />
                     <span>
-                      Ich möchte Neuigkeiten von Energie Pferd erhalten und kann mich jederzeit
-                      abmelden.
-                      <RouterLink to="/datenschutz" class="font-medium text-taupe-700">
-                        Datenschutz
+                      {{ t('newsletter.consent') }}
+                      <RouterLink :to="privacyLocation" class="font-medium text-taupe-700">
+                        {{ t('newsletter.privacy') }}
                       </RouterLink>
                     </span>
                   </label>
@@ -170,7 +168,7 @@ const submitNewsletter = async (event: SubmitEvent) => {
                     tabindex="-1"
                     aria-hidden="true"
                   />
-                  <input type="hidden" name="locale" value="de" />
+                  <input type="hidden" name="locale" :value="locale" />
                 </form>
 
                 <div
