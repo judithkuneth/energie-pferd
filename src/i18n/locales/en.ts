@@ -47,7 +47,7 @@ export default {
   },
   offers: {
     label: 'SESSIONS',
-    title: 'Spaces for connection',
+    title: 'Ways to Connect',
     intro:
       'Choose what speaks to you, or send me a message and we’ll find the right place to begin.',
     viewImpressions: 'View impressions',
