@@ -94,7 +94,7 @@ export default {
         },
       },
       guidance: {
-        title: 'Personal Support',
+        title: 'Personal Sessions',
         description:
           'A safe space for you and whatever is moving within you right now – in person or online, as a single session or over a longer period of time.',
         note: 'Encounter · Reflection · Support',
