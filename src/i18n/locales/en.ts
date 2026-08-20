@@ -102,7 +102,7 @@ export default {
       retreat: {
         title: '1:1 Day Retreat',
         description:
-          'This day is entirely yours. Together, we shape it around whatever is asking for space – with bodywork, stillness, conversation and time in nature and with the horses.',
+          'This day is entirely yours. At your own pace – with bodywork, stillness, mindful practices, and time in nature, together with the horses.',
         note: 'Time for you',
         alts: {
           bodywork: 'Holistic energy and bodywork with a horse in a personal session.',

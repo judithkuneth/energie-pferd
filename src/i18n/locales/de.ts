@@ -102,7 +102,7 @@ export default {
       retreat: {
         title: '1:1 Tages-Retreat',
         description:
-          'Dieser Tag gehört ganz dir. Wir gestalten ihn rund um das, was gerade Raum bekommen darf – mit Körperarbeit, Stille, Dialog und Zeit in der Natur und mit den Pferden.',
+          'Dieser Tag gehört ganz dir. In deinem Rhythmus – mit Körperarbeit, Stille, achtsamen Impulsen und Zeit in der Natur, gemeinsam mit den Pferden.',
         note: 'Zeit für dich',
         alts: {
           bodywork: 'Impression – energetische Körperarbeit mit Pferd in persönlicher Begleitung.',
