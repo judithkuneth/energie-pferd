@@ -44,18 +44,6 @@ const offers = computed<Offer[]>(() => [
           '/optimized/energetische-koerperarbeit-ruhe-sonnenlicht-480.jpg 480w, /optimized/energetische-koerperarbeit-ruhe-sonnenlicht-960.jpg 960w',
         alt: t('offers.items.bodywork.alts.sunlight'),
       },
-      {
-        src: '/optimized/energetische-koerperarbeit-zwischen-pferden-960.jpg',
-        srcset:
-          '/optimized/energetische-koerperarbeit-zwischen-pferden-480.jpg 480w, /optimized/energetische-koerperarbeit-zwischen-pferden-960.jpg 960w',
-        alt: t('offers.items.bodywork.alts.between'),
-      },
-      {
-        src: '/optimized/energetische-koerperarbeit-pony-naehe-960.jpg',
-        srcset:
-          '/optimized/energetische-koerperarbeit-pony-naehe-480.jpg 480w, /optimized/energetische-koerperarbeit-pony-naehe-960.jpg 960w',
-        alt: t('offers.items.bodywork.alts.pony'),
-      },
     ],
   },
   {
@@ -69,11 +57,6 @@ const offers = computed<Offer[]>(() => [
         srcset:
           '/optimized/vibe-main-640.jpg 640w, /optimized/vibe-main-960.jpg 960w, /optimized/vibe-main-1280.jpg 1280w',
         alt: t('offers.items.trust.alts.meeting'),
-      },
-      {
-        src: '/optimized/stillness-space-960.jpg',
-        srcset: '/optimized/stillness-space-480.jpg 480w, /optimized/stillness-space-960.jpg 960w',
-        alt: t('offers.items.trust.alts.stillness'),
       },
       {
         src: '/optimized/pasture-meeting-960.jpg',

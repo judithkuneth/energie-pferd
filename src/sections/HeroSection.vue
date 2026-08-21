@@ -17,32 +17,32 @@ const { t } = useI18n()
         <source
           type="image/avif"
           srcset="
-            /optimized/hero-20260726-960.avif   960w,
-            /optimized/hero-20260726-1440.avif 1440w,
-            /optimized/hero-20260726-1920.avif 1920w
+            /optimized/hero-pasture-20260821-960.avif   960w,
+            /optimized/hero-pasture-20260821-1440.avif 1440w,
+            /optimized/hero-pasture-20260821-1535.avif 1535w
           "
           sizes="100vw"
         />
         <source
           type="image/webp"
           srcset="
-            /optimized/hero-20260726-960.webp   960w,
-            /optimized/hero-20260726-1440.webp 1440w,
-            /optimized/hero-20260726-1920.webp 1920w
+            /optimized/hero-pasture-20260821-960.webp   960w,
+            /optimized/hero-pasture-20260821-1440.webp 1440w,
+            /optimized/hero-pasture-20260821-1535.webp 1535w
           "
           sizes="100vw"
         />
         <img
-          src="/optimized/hero-20260726-960.jpg"
+          src="/optimized/hero-pasture-20260821-960.jpg"
           srcset="
-            /optimized/hero-20260726-960.jpg   960w,
-            /optimized/hero-20260726-1440.jpg 1440w,
-            /optimized/hero-20260726-1920.jpg 1920w
+            /optimized/hero-pasture-20260821-960.jpg   960w,
+            /optimized/hero-pasture-20260821-1440.jpg 1440w,
+            /optimized/hero-pasture-20260821-1535.jpg 1535w
           "
           sizes="100vw"
           alt=""
-          width="1920"
-          height="1281"
+          width="1535"
+          height="1024"
           class="h-full w-full object-cover object-center opacity-70"
           loading="eager"
           fetchpriority="high"
@@ -104,6 +104,12 @@ const { t } = useI18n()
         </div>
       </RevealOnScroll>
     </div>
+
+    <p
+      class="pointer-events-none absolute bottom-2 right-3 rounded-full bg-taupe-900/25 px-2 py-1 text-[0.625rem] tracking-wide text-sand-50/75 backdrop-blur-sm sm:bottom-3 sm:right-5"
+    >
+      {{ t('hero.photoCredit') }}
+    </p>
   </section>
 </template>
 

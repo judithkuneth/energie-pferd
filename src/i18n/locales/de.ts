@@ -25,6 +25,7 @@ export default {
     title: 'Begegne dir selbst im Raum der Pferde',
     copy: 'Hier darfst du dir selbst näherkommen – sicher und wertfrei begleitet in der kraftvollen Präsenz der Pferde.',
     booking: '20 Min. Kennenlern-Call',
+    photoCredit: 'Foto: Jennifer Formann',
   },
   about: {
     quote:
@@ -66,8 +67,6 @@ export default {
           daniela: 'Energetische Körperarbeit mit Daniela und Pferd.',
           pasture: 'Energetische Körperarbeit mit Pferden auf der Weide.',
           sunlight: 'Energetische Körperarbeit und Ruhe im Sonnenlicht.',
-          between: 'Energetische Körperarbeit und Ruhen zwischen Pferden.',
-          pony: 'Energetische Körperarbeit mit einem Pony in stiller Nähe.',
         },
       },
       trust: {
@@ -77,7 +76,6 @@ export default {
         note: 'Wahrnehmen · Fühlen · Vertrauen',
         alts: {
           meeting: 'Impression – sanfte Begegnung.',
-          stillness: 'Impression – stille Präsenz im Raum.',
           pasture: 'Impression – Begegnung auf der Weide.',
           nature: 'Impression – Freiheit in der Natur.',
           open: 'Impression – Pferd im offenen Raum.',

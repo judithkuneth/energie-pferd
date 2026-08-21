@@ -25,6 +25,7 @@ export default {
     copy:
       'This is a safe space for you to reconnect with yourself, held and guided by the powerful presence of the horses.',
     booking: '20 min. discovery call',
+    photoCredit: 'Photo: Jennifer Formann',
   },
   about: {
     quote:
@@ -66,8 +67,6 @@ export default {
           daniela: 'Holistic energy and bodywork with Daniela and a horse.',
           pasture: 'Holistic energy and bodywork with horses in the pasture.',
           sunlight: 'Holistic energy and bodywork in the warmth of sunlight.',
-          between: 'Resting between horses during a holistic bodywork session.',
-          pony: 'Holistic energy and bodywork in quiet closeness with a pony.',
         },
       },
       trust: {
@@ -77,7 +76,6 @@ export default {
         note: 'Notice · Feel · Trust',
         alts: {
           meeting: 'A gentle encounter with a horse.',
-          stillness: 'Quiet presence in a held space.',
           pasture: 'An encounter in the pasture.',
           nature: 'Freedom in nature.',
           open: 'A horse in an open space.',

@@ -27,9 +27,9 @@ const images = computed<VibeImage[]>(() => [
     alt: t('vibe.imageAlts.bodywork'),
   },
   {
-    src: '/optimized/energetische-koerperarbeit-pferde-weide-960.jpg',
+    src: '/optimized/vibe-bodywork-pasture-20260821-958.jpg',
     srcset:
-      '/optimized/energetische-koerperarbeit-pferde-weide-480.jpg 480w, /optimized/energetische-koerperarbeit-pferde-weide-960.jpg 960w',
+      '/optimized/vibe-bodywork-pasture-20260821-480.jpg 480w, /optimized/vibe-bodywork-pasture-20260821-958.jpg 958w',
     alt: t('vibe.imageAlts.pasture'),
   },
 ])
