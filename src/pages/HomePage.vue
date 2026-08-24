@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import SiteNav from '@/components/SiteNav.vue'
-import BookingModal from '@/components/BookingModal.vue'
+import SiteHeader from '@/components/SiteHeader.vue'
 import HeroSection from '@/sections/HeroSection.vue'
 import AboutSection from '@/sections/AboutSection.vue'
 import OffersSection from '@/sections/OffersSection.vue'
@@ -11,7 +10,7 @@ import ContactSection from '@/sections/ContactSection.vue'
 import NewsletterSection from '@/sections/NewsletterSection.vue'
 import SiteFooter from '@/sections/SiteFooter.vue'
 
-const isBookingOpen = ref(false)
+const siteHeader = ref<{ openBooking: () => void } | null>(null)
 const { t } = useI18n()
 </script>
 
@@ -24,19 +23,17 @@ const { t } = useI18n()
       {{ t('navigation.skipToContent') }}
     </a>
 
-    <SiteNav @book="isBookingOpen = true" />
+    <SiteHeader ref="siteHeader" />
 
     <main>
-      <HeroSection @book="isBookingOpen = true" />
+      <HeroSection @book="siteHeader?.openBooking()" />
       <AboutSection />
       <VibeGallerySection />
       <OffersSection />
-      <ContactSection @book="isBookingOpen = true" />
+      <ContactSection @book="siteHeader?.openBooking()" />
       <NewsletterSection />
     </main>
 
     <SiteFooter />
-
-    <BookingModal :open="isBookingOpen" @close="isBookingOpen = false" />
   </div>
 </template>

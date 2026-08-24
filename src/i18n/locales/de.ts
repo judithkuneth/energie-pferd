@@ -156,6 +156,7 @@ export default {
     rights: 'Alle Rechte vorbehalten.',
     legalNotice: 'Impressum',
     privacy: 'Datenschutz',
+    cookieNotice: 'Diese Website enthält keine Analyse- oder Marketing-Cookies',
   },
   newsletterSuccess: {
     title: 'Schön, dass du dabei bist!',
@@ -218,18 +219,23 @@ export default {
     brevoP2:
       'Rechtsgrundlage ist deine Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Du kannst diese jederzeit mit Wirkung für die Zukunft widerrufen, insbesondere über den Abmeldelink in jeder E-Mail. Brevo verarbeitet die Daten als Auftragsverarbeiter. Die Datenbanken von Brevo werden nach Angaben des Anbieters innerhalb der Europäischen Union betrieben. Weitere Informationen findest du in der',
     brevoLink: 'Datenschutzerklärung von Brevo',
-    externalTitle: '6. Externe Links',
+    cookiesTitle: '6. Cookies und Website-Tracking',
+    cookiesP1:
+      'Beim bloßen Besuch dieser Website werden keine Analyse- oder Marketing-Cookies gesetzt und kein Webanalyse- oder Werbe-Tracking eingesetzt. Daher wird kein Einwilligungsbanner angezeigt.',
+    cookiesP2:
+      'Erst wenn du die in Punkt 4 beschriebene Terminbuchung mit Zeeg oder die in Punkt 5 beschriebene Newsletter-Anmeldung mit Brevo aktiv nutzt, werden Daten an den jeweiligen Dienstleister übertragen. Dabei können technisch erforderliche Sicherheits- oder Sitzungstechnologien zum Einsatz kommen.',
+    externalTitle: '7. Externe Links',
     externalP1:
       'Diese Website enthält Links zu externen Angeboten, insbesondere Instagram, WhatsApp, Zeeg und Brevo. Erst wenn du einen solchen Link aufrufst, gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Für deren Inhalte und Datenverarbeitung ist der jeweilige Betreiber verantwortlich.',
-    retentionTitle: '7. Speicherdauer',
+    retentionTitle: '8. Speicherdauer',
     retentionP1:
       'Personenbezogene Daten werden nur so lange gespeichert, wie dies für den jeweiligen Zweck erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen. Nach Wegfall des Zwecks beziehungsweise Ablauf der gesetzlichen Fristen werden die Daten gelöscht oder anonymisiert.',
-    rightsTitle: '8. Deine Rechte',
+    rightsTitle: '9. Deine Rechte',
     rightsP1:
       'Du hast im Rahmen der gesetzlichen Voraussetzungen das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch. Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen.',
     rightsP2:
       'Wenn du der Ansicht bist, dass die Verarbeitung deiner Daten gegen Datenschutzrecht verstößt, kannst du dich an die österreichische Datenschutzbehörde wenden:',
-    securityTitle: '9. Sicherheit und Aktualisierung',
+    securityTitle: '10. Sicherheit und Aktualisierung',
     securityP1:
       'Diese Website nutzt eine verschlüsselte Verbindung, sofern sie über HTTPS bereitgestellt wird. Die Datenschutzerklärung wird angepasst, wenn sich die Website, eingesetzte Dienste oder rechtliche Anforderungen ändern.',
     updated: 'Stand: August 2026',

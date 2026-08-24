@@ -1,30 +1,14 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import SiteHeader from '@/components/SiteHeader.vue'
 import SiteFooter from '@/sections/SiteFooter.vue'
-import { useSiteLocale } from '@/composables/useSiteLocale'
 
 const { t } = useI18n()
-const { homeLocation } = useSiteLocale()
 </script>
 
 <template>
   <div class="min-h-dvh bg-sand-50 font-sans text-taupe-800">
-    <header class="border-b border-taupe-200/50 bg-sand-50/90">
-      <div class="container-page flex items-center justify-between gap-4 py-4">
-        <RouterLink
-          :to="homeLocation"
-          class="font-serif text-lg font-semibold text-taupe-900 no-underline"
-        >
-          Energie Pferd
-        </RouterLink>
-        <RouterLink
-          :to="homeLocation"
-          class="text-sm font-medium text-taupe-700 no-underline transition hover:text-primary-600"
-        >
-          {{ t('common.backToWebsite') }}
-        </RouterLink>
-      </div>
-    </header>
+    <SiteHeader />
 
     <main class="container-page py-12 sm:py-16">
       <article class="mx-auto max-w-3xl">

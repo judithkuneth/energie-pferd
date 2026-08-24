@@ -12,8 +12,8 @@ const { t } = useI18n()
 const { alternateLocale, alternateLocation, homeLocation } = useSiteLocale()
 
 const items = computed(() => [
-  { label: t('navigation.offers'), href: '#angebote' },
-  { label: t('navigation.contact'), href: '#kontakt' },
+  { label: t('navigation.offers'), hash: '#angebote' },
+  { label: t('navigation.contact'), hash: '#kontakt' },
 ])
 
 const open = ref(false)
@@ -63,14 +63,14 @@ function openBooking() {
         class="hidden items-center gap-6 md:flex"
         :aria-label="t('navigation.main')"
       >
-        <a
+        <RouterLink
           v-for="item in items"
-          :key="item.href"
-          :href="item.href"
+          :key="item.hash"
+          :to="{ ...homeLocation, hash: item.hash }"
           class="text-sm font-medium text-taupe-700 no-underline transition hover:text-taupe-900"
         >
           {{ item.label }}
-        </a>
+        </RouterLink>
         <button
           type="button"
           class="rounded-full bg-primary-500 px-4 py-2 text-sm font-medium text-sand-50 no-underline transition hover:bg-primary-600"
@@ -142,15 +142,15 @@ function openBooking() {
       "
     >
       <div class="container-page flex flex-col gap-2 pb-4">
-        <a
+        <RouterLink
           v-for="item in items"
-          :key="item.href"
-          :href="item.href"
+          :key="item.hash"
+          :to="{ ...homeLocation, hash: item.hash }"
           class="rounded-xl px-3 py-2 text-sm font-medium text-taupe-800 no-underline hover:bg-white/70"
           @click="close"
         >
           {{ item.label }}
-        </a>
+        </RouterLink>
         <button
           type="button"
           class="mt-2 inline-flex items-center justify-center rounded-full bg-primary-500 px-4 py-3 text-sm font-medium text-sand-50 no-underline transition hover:bg-primary-600"

@@ -163,6 +163,13 @@ const router = createRouter({
   ],
   scrollBehavior(to, _from, savedPosition) {
     if (savedPosition) return savedPosition
+    if (to.hash === '#cookies-and-tracking') {
+      const target = document.getElementById('cookies-and-tracking')
+      const targetHeight = target?.getBoundingClientRect().height ?? 0
+      const centeredOffset = Math.max(96, (window.innerHeight - targetHeight) / 2)
+
+      return { el: to.hash, top: centeredOffset, behavior: 'smooth' }
+    }
     if (to.hash) return { el: to.hash, behavior: 'smooth' }
     return { top: 0 }
   },

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import SiteHeader from '@/components/SiteHeader.vue'
 import { useSiteLocale } from '@/composables/useSiteLocale'
 
 const { t } = useI18n()
@@ -7,8 +8,10 @@ const { homeLocation } = useSiteLocale()
 </script>
 
 <template>
-  <div class="min-h-dvh bg-sand-50 font-sans text-taupe-800">
-    <main class="container-page flex min-h-dvh items-center justify-center py-16">
+  <div class="flex min-h-dvh flex-col bg-sand-50 font-sans text-taupe-800">
+    <SiteHeader />
+
+    <main class="container-page flex flex-1 items-center justify-center py-16">
       <div class="max-w-xl text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.22em] text-taupe-600">
           {{ t('notFound.eyebrow') }}

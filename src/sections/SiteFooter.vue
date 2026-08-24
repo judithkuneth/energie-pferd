@@ -44,9 +44,18 @@ const { homeLocation, legalNoticeLocation, privacyLocation } = useSiteLocale()
         </div>
       </div>
       <div class="mt-8 hairline" />
-      <div class="mt-6 flex flex-col gap-2 text-xs text-taupe-600 sm:flex-row sm:items-center sm:justify-between">
+      <div
+        class="mt-6 flex flex-col gap-2 text-xs text-taupe-600 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-4"
+      >
         <p>© {{ year }} Energie Pferd. {{ t('footer.rights') }}</p>
-        <div class="flex items-center gap-3 text-taupe-500">
+        <RouterLink
+          :to="{ ...privacyLocation, hash: '#cookies-and-tracking' }"
+          class="inline-flex items-center gap-1.5 text-taupe-500 no-underline hover:text-taupe-700 hover:underline lg:justify-self-center"
+        >
+          <span class="h-1.5 w-1.5 rounded-full bg-primary-500" aria-hidden="true" />
+          {{ t('footer.cookieNotice') }}
+        </RouterLink>
+        <div class="flex items-center gap-3 text-taupe-500 lg:justify-self-end">
           <RouterLink
             :to="legalNoticeLocation"
             class="no-underline hover:text-taupe-700 hover:underline"

@@ -155,6 +155,7 @@ export default {
     rights: 'All rights reserved.',
     legalNotice: 'Legal notice',
     privacy: 'Privacy',
+    cookieNotice: 'This website does not use analytics or marketing cookies',
   },
   newsletterSuccess: {
     title: 'Welcome – I am glad you are here!',
@@ -217,18 +218,23 @@ export default {
     brevoP2:
       'The legal basis is your consent under Article 6(1)(a) GDPR. You may withdraw this consent at any time with effect for the future, in particular by using the unsubscribe link in every email. Brevo processes the data as a processor. According to the provider, Brevo databases are operated within the European Union. Further information is available in the',
     brevoLink: 'Brevo privacy policy',
-    externalTitle: '6. External links',
+    cookiesTitle: '6. Cookies and website tracking',
+    cookiesP1:
+      'Simply visiting this website does not set any analytics or marketing cookies and no web analytics or advertising tracking is used. This is why no consent banner is displayed.',
+    cookiesP2:
+      'Data is only transmitted to the respective service provider when you actively use the Zeeg appointment booking described in section 4 or the Brevo newsletter sign-up described in section 5. Technically necessary security or session technologies may be used in this process.',
+    externalTitle: '7. External links',
     externalP1:
       'This website contains links to external services, in particular Instagram, WhatsApp, Zeeg and Brevo. The respective provider’s privacy policy applies only after you follow such a link. The respective operator is responsible for its content and data processing.',
-    retentionTitle: '7. Retention period',
+    retentionTitle: '8. Retention period',
     retentionP1:
       'Personal data is stored only for as long as required for the relevant purpose or for as long as statutory retention obligations apply. Once the purpose no longer applies or the statutory periods have expired, the data is deleted or anonymised.',
-    rightsTitle: '8. Your rights',
+    rightsTitle: '9. Your rights',
     rightsP1:
       'Subject to the statutory requirements, you have the right to information, rectification, erasure, restriction of processing, data portability and objection. You may withdraw consent at any time with effect for the future.',
     rightsP2:
       'If you believe that the processing of your data violates data protection law, you may contact the Austrian Data Protection Authority:',
-    securityTitle: '9. Security and updates',
+    securityTitle: '10. Security and updates',
     securityP1:
       'This website uses an encrypted connection when it is provided over HTTPS. This privacy policy will be updated if the website, the services used or the legal requirements change.',
     updated: 'Last updated: August 2026',
