@@ -180,17 +180,14 @@ const experiences = [
         <div class="guides-grid">
           <article>
             <img
-              src="/retreat/judith.webp"
-              alt="Judith sitzt auf einem Baumstamm in der Natur. Sie beschreibt sich als Kraftentfalterin und Brückenbauerin zwischen Welten."
+              src="/retreat/judith-vorstellung-10.webp"
+              alt="Judith steht lächelnd neben einem Pferd auf der Weide. Im Bild: Stimme für eine neue Pferdewelt, Brückenbauerin, Reiki Fee und deine Begleiterin auf dem Weg in deine Kraft."
               width="1080"
               height="1350"
               loading="lazy"
             />
             <div class="guide-copy">
-              <p class="eyebrow">Kraftentfalterin & Wegbegleiterin</p>
               <h3>Judith Kuneth</h3>
-              <p>„Deine Wegbegleiterin durch Licht und Schatten – zurück in deine Kraft.“</p>
-              <a href="tel:+4367683555785">Judith anrufen <span aria-hidden="true">↗</span></a>
             </div>
           </article>
           <article>
@@ -202,10 +199,7 @@ const experiences = [
               loading="lazy"
             />
             <div class="guide-copy">
-              <p class="eyebrow">Raumhalterin & Visionärin</p>
               <h3><span class="academic-title">Mag.a.phil.</span> Sabine Dörfler</h3>
-              <p>„Deine Begleiterin in dein volles Potenzial – mit Raum für deine Entfaltung.“</p>
-              <a href="tel:+4369910751170">Sabine anrufen <span aria-hidden="true">↗</span></a>
             </div>
           </article>
         </div>
