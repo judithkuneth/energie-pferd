@@ -4,7 +4,7 @@ export default {
     backToWebsite: 'Zurück zur Website',
     backToHome: 'Zur Startseite',
     legal: 'RECHTLICHES',
-    close: 'Schließen',
+    close: 'Schließen'
   },
   navigation: {
     skipToContent: 'Zum Inhalt springen',
@@ -17,34 +17,31 @@ export default {
     booking: '20 Min. Kennenlern-Call',
     language: 'Sprache',
     switchToEnglish: 'Switch to English',
-    switchToGerman: 'Zur deutschen Version wechseln',
+    switchToGerman: 'Zur deutschen Version wechseln'
   },
   hero: {
-    eyebrow:
-      'Pferdegestützte Begleitung · Selbsterfahrung · Ganzheitliche Energie- & Körperarbeit',
+    eyebrow: 'Pferdegestützte Begleitung · Selbsterfahrung · Ganzheitliche Energie- & Körperarbeit',
     title: 'Begegne dir selbst im Raum der Pferde',
     copy: 'Hier darfst du dir selbst näherkommen – sicher und wertfrei begleitet in der kraftvollen Präsenz der Pferde.',
     booking: '20 Min. Kennenlern-Call',
-    photoCredit: 'Foto: Jennifer Formann',
+    photoCredit: 'Foto: Jennifer Formann'
   },
   about: {
     quote:
       'Pferde nehmen wahr, was Worte nicht sagen. Sie spüren, was du in dir trägst, oft noch bevor du selbst es erkennst.',
-    text:
-      'Gemeinsam mit den Pferden begleite ich dich durch das, was gerade präsent ist. Hier darfst du dir selbst auf einer tieferen Ebene begegnen, fühlen, was gefühlt werden möchte, und loslassen, was du nicht länger mit dir tragen möchtest.',
+    text: 'Gemeinsam mit den Pferden begleite ich dich durch das, was gerade präsent ist. Hier darfst du dir selbst auf einer tieferen Ebene begegnen, fühlen, was gefühlt werden möchte, und loslassen, was du nicht länger mit dir tragen möchtest.',
     textSecondary:
       'Hier geht es nicht um mehr Wissen, sondern um Erfahrung. Denn was du wirklich durchlebst, wird Teil deiner inneren Weisheit – und darf seinen Weg in deinen Alltag finden.',
-    imageAlt: 'Energetische Körperarbeit mit Pferd in ruhiger Begleitung.',
+    imageAlt: 'Energetische Körperarbeit mit Pferd in ruhiger Begleitung.'
   },
   vibe: {
     title: 'Dieser Raum ist für Dich',
-    text:
-      'Ob du Kraft schöpfen willst, Klarheit suchst oder einen Schritt wagen magst – vielleicht bist du auch einfach neugierig. Ich treffe dich dort, wo du gerade bist.',
+    text: 'Ob du Kraft schöpfen willst, Klarheit suchst oder einen Schritt wagen magst – vielleicht bist du auch einfach neugierig. Ich treffe dich dort, wo du gerade bist.',
     imageAlts: {
       main: 'Ruhige Begegnung – Nähe und Präsenz mit dem Pferd.',
       bodywork: 'Energetische Körperarbeit in ruhiger Verbindung mit dem Pferd.',
-      pasture: 'Energetische Körperarbeit mit Pferden auf der Weide.',
-    },
+      pasture: 'Energetische Körperarbeit mit Pferden auf der Weide.'
+    }
   },
   offers: {
     label: 'ANGEBOTE',
@@ -66,8 +63,8 @@ export default {
           sarah: 'Energetische Körperarbeit mit Sarah und Pferd.',
           daniela: 'Energetische Körperarbeit mit Daniela und Pferd.',
           pasture: 'Energetische Körperarbeit mit Pferden auf der Weide.',
-          sunlight: 'Energetische Körperarbeit und Ruhe im Sonnenlicht.',
-        },
+          sunlight: 'Energetische Körperarbeit und Ruhe im Sonnenlicht.'
+        }
       },
       trust: {
         title: 'Spüren und Vertrauen',
@@ -78,8 +75,8 @@ export default {
           meeting: 'Impression – sanfte Begegnung.',
           pasture: 'Impression – Begegnung auf der Weide.',
           nature: 'Impression – Freiheit in der Natur.',
-          open: 'Impression – Pferd im offenen Raum.',
-        },
+          open: 'Impression – Pferd im offenen Raum.'
+        }
       },
       leadership: {
         title: 'Mit Klarheit führen',
@@ -88,14 +85,14 @@ export default {
         note: 'Klarheit · Führen · Verkörpern',
         alts: {
           dialogue: 'Impression – Begegnung im Dialog.',
-          leading: 'Impression – Führung und Verbindung.',
-        },
+          leading: 'Impression – Führung und Verbindung.'
+        }
       },
       guidance: {
         title: 'Persönliche Begleitung',
         description:
           'Ein geschützter Raum für dich und alles, was dich gerade bewegt – vor Ort oder online. Einmalig oder über einen längeren Zeitraum.',
-        note: 'Begegnung · Reflexion · Begleitung',
+        note: 'Begegnung · Reflexion · Begleitung'
       },
       retreat: {
         title: '1:1 Tages-Retreat',
@@ -106,10 +103,10 @@ export default {
           bodywork: 'Impression – energetische Körperarbeit mit Pferd in persönlicher Begleitung.',
           daniela: 'Impression – persönliche energetische Körperarbeit mit Pferd.',
           meeting: 'Impression – achtsame Begegnung mit dem Pferd.',
-          open: 'Impression – offener Raum mit den Pferden.',
-        },
-      },
-    },
+          open: 'Impression – offener Raum mit den Pferden.'
+        }
+      }
+    }
   },
   contact: {
     label: 'JUDITH',
@@ -123,7 +120,7 @@ export default {
     location: '9555 Glanegg, Kärnten · rund 20 Minuten von Klagenfurt',
     addressNote: '* Die genaue Adresse erhältst du nach der Terminvereinbarung.',
     travelNote: 'Begleitung an anderen Orten ist nach Absprache möglich.',
-    portraitAlt: 'Portrait in der Natur.',
+    portraitAlt: 'Portrait in der Natur.'
   },
   newsletter: {
     title: 'Neuigkeiten & nächste Termine',
@@ -133,11 +130,10 @@ export default {
     emailPlaceholder: 'Deine E-Mail-Adresse',
     submit: 'Anmelden',
     submitting: 'Wird angemeldet …',
-    consent:
-      'Ich möchte Neuigkeiten von Energie Pferd erhalten und kann mich jederzeit abmelden.',
+    consent: 'Ich möchte Neuigkeiten von Energie Pferd erhalten und kann mich jederzeit abmelden.',
     privacy: 'Datenschutz',
     error: 'Hopsa, deine Anmeldung konnte nicht gespeichert werden. Bitte versuche es erneut.',
-    success: 'Fast geschafft! Bitte bestätige deine Anmeldung über den Link in deinem Postfach.',
+    success: 'Fast geschafft! Bitte bestätige deine Anmeldung über den Link in deinem Postfach.'
   },
   booking: {
     label: 'TERMINBUCHUNG',
@@ -147,7 +143,7 @@ export default {
     loading: 'Terminkalender wird geladen …',
     loadFailed: 'Der Terminkalender konnte nicht geladen werden.',
     openPage: 'Buchungsseite öffnen',
-    openNewWindow: 'Buchungsseite in einem neuen Fenster öffnen',
+    openNewWindow: 'Buchungsseite in einem neuen Fenster öffnen'
   },
   footer: {
     home: 'Zur Startseite',
@@ -156,18 +152,16 @@ export default {
     rights: 'Alle Rechte vorbehalten.',
     legalNotice: 'Impressum',
     privacy: 'Datenschutz',
-    cookieNotice: 'Diese Website enthält keine Analyse- oder Marketing-Cookies',
+    cookieNotice: 'Diese Website enthält keine Analyse- oder Marketing-Cookies'
   },
   newsletterSuccess: {
     title: 'Schön, dass du dabei bist!',
-    text:
-      'Deine Newsletter-Anmeldung ist bestätigt. Ich freue mich, auf diesem Weg mit dir in Verbindung zu bleiben 💛',
+    text: 'Deine Newsletter-Anmeldung ist bestätigt. Ich freue mich, auf diesem Weg mit dir in Verbindung zu bleiben 💛'
   },
   notFound: {
     eyebrow: 'Fehler 404',
     title: 'Diese Seite gibt es nicht.',
-    text:
-      'Vielleicht hat sich der Link verändert. Auf der Startseite findest du alle Angebote und Kontaktmöglichkeiten.',
+    text: 'Vielleicht hat sich der Link verändert. Auf der Startseite findest du alle Angebote und Kontaktmöglichkeiten.'
   },
   legalNotice: {
     title: 'Impressum',
@@ -184,7 +178,7 @@ export default {
       'Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für Vollständigkeit, Richtigkeit und Aktualität kann dennoch keine Gewähr übernommen werden. Für Inhalte externer Websites, auf die verlinkt wird, sind ausschließlich deren Betreiber verantwortlich.',
     copyrightTitle: 'Urheberrecht',
     copyrightText:
-      'Inhalte und Werke auf dieser Website unterliegen dem geltenden Urheberrecht. Eine Verwendung außerhalb der gesetzlichen Grenzen bedarf der vorherigen Zustimmung der jeweiligen Rechteinhaberin oder des jeweiligen Rechteinhabers.',
+      'Inhalte und Werke auf dieser Website unterliegen dem geltenden Urheberrecht. Eine Verwendung außerhalb der gesetzlichen Grenzen bedarf der vorherigen Zustimmung der jeweiligen Rechteinhaberin oder des jeweiligen Rechteinhabers.'
   },
   privacyPolicy: {
     title: 'Datenschutzerklärung',
@@ -238,9 +232,12 @@ export default {
     securityTitle: '10. Sicherheit und Aktualisierung',
     securityP1:
       'Diese Website nutzt eine verschlüsselte Verbindung, sofern sie über HTTPS bereitgestellt wird. Die Datenschutzerklärung wird angepasst, wenn sich die Website, eingesetzte Dienste oder rechtliche Anforderungen ändern.',
-    updated: 'Stand: August 2026',
+    updated: 'Stand: August 2026'
   },
   seo: {
+    retreatTitle: 'Tagesretreat mit Pferden · 11. Oktober 2026 – Energie Pferd',
+    retreatDescription:
+      'Ein Tag für dich am Blåsehof: Pferdebegegnungen, Körperarbeit und Waldbaden mit Judith Kuneth und Sabine Dörfler. 11. Oktober 2026, 10 – 17 Uhr. Maximal 6 Teilnehmer:innen.',
     homeTitle: 'Pferdegestützte Begleitung in Kärnten | Energie Pferd',
     homeDescription:
       'Energetische Körperarbeit, Selbstführung und persönliche Begleitung mit Pferden in Glanegg – rund 20 Minuten von Klagenfurt.',
@@ -251,6 +248,6 @@ export default {
     privacyTitle: 'Datenschutz | Energie Pferd',
     privacyDescription: 'Datenschutzerklärung von Energie Pferd.',
     notFoundTitle: 'Seite nicht gefunden | Energie Pferd',
-    notFoundDescription: 'Die gesuchte Seite wurde nicht gefunden.',
-  },
+    notFoundDescription: 'Die gesuchte Seite wurde nicht gefunden.'
+  }
 }

@@ -8,6 +8,7 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
+    "generate:og": "node scripts/generate-og.mjs",
     "optimize:hero": "node scripts/optimize-hero.mjs",
     "type-check": "vue-tsc --build",
     "format": "prettier --write --experimental-cli src/"

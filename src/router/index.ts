@@ -12,6 +12,20 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/retreat',
+      name: 'retreat-de',
+      component: () => import('@/pages/RetreatPage.vue'),
+      meta: {
+        locale: 'de',
+        routeKey: 'retreat',
+        titleKey: 'seo.retreatTitle',
+        descriptionKey: 'seo.retreatDescription',
+        robots: 'index, follow, max-image-preview:large',
+        canonicalPath: '/retreat',
+        dePath: '/retreat',
+      },
+    },
+    {
       path: '/',
       name: 'home-de',
       component: HomePage,

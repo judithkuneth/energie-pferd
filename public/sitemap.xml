@@ -17,4 +17,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://energie-pferd.at/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://energie-pferd.at/" />
   </url>
+  <url>
+    <loc>https://energie-pferd.at/retreat</loc>
+    <lastmod>2026-09-19</lastmod>
+  </url>
 </urlset>
