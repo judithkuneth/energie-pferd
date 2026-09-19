@@ -21,6 +21,7 @@ export default defineConfig({
       input: {
         main: fileURLToPath(new URL('./index.html', import.meta.url)),
         en: fileURLToPath(new URL('./en/index.html', import.meta.url)),
+        retreat: fileURLToPath(new URL('./retreat/index.html', import.meta.url)),
       },
     },
   },

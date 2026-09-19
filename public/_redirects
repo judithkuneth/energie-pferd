@@ -5,8 +5,8 @@ https://www.energie-pferd.at/* https://energie-pferd.at/:splat 301!
 /newsletter-erfolgreich /newsletter-success 301!
 
 /legal-notice           /index.html     200
-/retreat                /index.html     200
-/retreat/               /index.html     200
+/retreat                /retreat/index.html     200
+/retreat/               /retreat/index.html     200
 /privacy                /index.html     200
 /newsletter             /index.html     200
 /newsletter-success     /index.html     200

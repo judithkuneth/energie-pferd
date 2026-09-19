@@ -261,6 +261,15 @@ router.afterEach((to) => {
   const enPath = typeof to.meta.enPath === 'string' ? to.meta.enPath : undefined
 
   document.title = title
+  const isRetreat = to.meta.routeKey === 'retreat'
+  const shareImage = new URL(isRetreat ? '/retreat/og.jpg' : '/og.jpg?v=20260907', siteUrl).href
+  const shareImageAlt = isRetreat
+    ? 'Pferdemagie Gruppenretreat – Ein Tag für dich. Lass dich berühren. 11. Oktober 2026 am Blåsehof.'
+    : 'Energie Pferd – Begegne dir selbst im Raum der Pferde'
+  setPropertyMeta('og:image', shareImage)
+  setPropertyMeta('og:image:alt', shareImageAlt)
+  setNamedMeta('twitter:image', shareImage)
+  setNamedMeta('twitter:image:alt', shareImageAlt)
   setNamedMeta('description', description)
   setNamedMeta('robots', robots)
   setNamedMeta('twitter:title', title)
