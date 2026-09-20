@@ -186,7 +186,7 @@ const experiences = [
               loading="lazy"
             />
             <div class="guide-copy">
-              <h3>Judith Kuneth</h3>
+              <h3>Judith Kuneth <span class="academic-title">M.Sc.</span></h3>
             </div>
           </article>
           <article>
@@ -687,7 +687,7 @@ main[id] {
     background: linear-gradient(90deg, #1c1a18ca, #1c1a1865);
   }
   .hero-photo {
-    object-position: 62% center;
+    object-position: 40% center;
   }
   .hero-copy {
     font-size: 15px;
