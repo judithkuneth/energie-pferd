@@ -179,7 +179,7 @@ const experiences = [
         <div class="guides-grid">
           <article>
             <img
-              src="/retreat/judith-vorstellung-10.webp"
+              src="/retreat/judith-vorstellung-v2.webp"
               alt="Judith steht lächelnd neben einem Pferd auf der Weide. Im Bild: Stimme für eine neue Pferdewelt, Brückenbauerin, Reiki Fee und deine Begleiterin auf dem Weg in deine Kraft."
               width="1080"
               height="1350"
@@ -191,8 +191,8 @@ const experiences = [
           </article>
           <article>
             <img
-              src="/retreat/sabine.webp"
-              alt="Sabine mit ihrer Pferdepartnerin Joey auf der Weide. Sie beschreibt sich als Raumhalterin für Entfaltung und Begleiterin in dein volles Potenzial."
+              src="/retreat/sabine-vorstellung-v2.webp"
+              alt="Sabine mit ihrer Pferdepartnerin Joey auf der Weide. Im Bild: Familien- und Hofmanagerin, Raumhalterin für Entfaltung, Visionärin und Pionierin, deine Begleiterin in dein volles Potenzial und Somatic wisdom."
               width="1080"
               height="1350"
               loading="lazy"
