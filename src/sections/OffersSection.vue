@@ -12,6 +12,9 @@ type Offer = {
 }
 
 const { t } = useI18n()
+const emit = defineEmits<{ book: [] }>()
+// Temporarily route offer cards to the discovery call; keep detail modals for later.
+const showOfferDetails = false
 
 const offers = computed<Offer[]>(() => [
   {
@@ -143,6 +146,10 @@ const selectedOffer = computed(
 const isModalOpen = computed(() => selectedOffer.value !== null)
 
 function openOffer(offer: Offer) {
+  if (!showOfferDetails) {
+    emit('book')
+    return
+  }
   selectedOfferId.value = offer.id
 }
 
@@ -185,8 +192,8 @@ function closeOffer() {
               </h3>
               <span
                 class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-taupe-200/70 bg-sand-100/70 text-taupe-700 transition group-hover:border-primary-500/45 group-hover:bg-sand-50 group-hover:text-primary-600"
-                :aria-label="t('offers.viewImpressions')"
-                :title="t('offers.viewImpressions')"
+                :aria-label="showOfferDetails ? t('offers.viewImpressions') : t('hero.booking')"
+                :title="showOfferDetails ? t('offers.viewImpressions') : t('hero.booking')"
               >
                 <span class="text-base leading-none" aria-hidden="true">↗</span>
               </span>

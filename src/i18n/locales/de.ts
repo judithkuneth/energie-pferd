@@ -8,6 +8,7 @@ export default {
   },
   navigation: {
     retreat: 'Retreat 11. Oktober',
+    retreatCta: 'Gruppenretreat · 11. Oktober',
     skipToContent: 'Zum Inhalt springen',
     backToTop: 'Zurück nach oben',
     main: 'Hauptnavigation',
@@ -39,9 +40,9 @@ export default {
     title: 'Dieser Raum ist für Dich',
     text: 'Ob du Kraft schöpfen willst, Klarheit suchst oder einen Schritt wagen magst – vielleicht bist du auch einfach neugierig. Ich treffe dich dort, wo du gerade bist.',
     imageAlts: {
-      main: 'Ruhige Begegnung – Nähe und Präsenz mit dem Pferd.',
+      main: 'Ein geschecktes Pferd senkt seinen Kopf zu einer Frau auf einer Behandlungsliege.',
       bodywork: 'Energetische Körperarbeit in ruhiger Verbindung mit dem Pferd.',
-      pasture: 'Energetische Körperarbeit mit Pferden auf der Weide.'
+      pasture: 'Judith begleitet eine Session an der Behandlungsliege, umgeben von Pferden.'
     }
   },
   offers: {

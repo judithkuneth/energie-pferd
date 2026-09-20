@@ -14,9 +14,9 @@ const { t } = useI18n()
 
 const images = computed<VibeImage[]>(() => [
   {
-    src: '/optimized/vibe-main-960.jpg',
+    src: '/optimized/vibe-horse-close-20260904-1080.webp',
     srcset:
-      '/optimized/vibe-main-640.jpg 640w, /optimized/vibe-main-960.jpg 960w, /optimized/vibe-main-1280.jpg 1280w',
+      '/optimized/vibe-horse-close-20260904-640.webp 640w, /optimized/vibe-horse-close-20260904-1080.webp 1080w',
     sizes: '(min-width: 1152px) 672px, (min-width: 768px) 58vw, calc(100vw - 2.5rem)',
     alt: t('vibe.imageAlts.main'),
   },
@@ -27,9 +27,10 @@ const images = computed<VibeImage[]>(() => [
     alt: t('vibe.imageAlts.bodywork'),
   },
   {
-    src: '/optimized/vibe-bodywork-pasture-20260821-958.jpg',
+    src: '/optimized/vibe-herd-session-20260915-960.webp',
     srcset:
-      '/optimized/vibe-bodywork-pasture-20260821-480.jpg 480w, /optimized/vibe-bodywork-pasture-20260821-958.jpg 958w',
+      '/optimized/vibe-herd-session-20260915-480.webp 480w, /optimized/vibe-herd-session-20260915-960.webp 960w',
+    sizes: '(min-width: 1152px) 448px, (min-width: 768px) 42vw, calc(100vw - 2.5rem)',
     alt: t('vibe.imageAlts.pasture'),
   },
 ])
@@ -58,7 +59,7 @@ const images = computed<VibeImage[]>(() => [
               :srcset="images[0]?.srcset"
               :sizes="images[0]?.sizes"
               :alt="images[0]?.alt"
-              class="h-[22rem] w-full object-cover sm:h-[28rem]"
+              class="h-[22rem] w-full object-cover object-[center_34%] sm:h-[28rem]"
               loading="lazy"
               decoding="async"
             />
@@ -87,7 +88,7 @@ const images = computed<VibeImage[]>(() => [
                 :srcset="images[2]?.srcset"
                 :sizes="images[2]?.sizes"
                 :alt="images[2]?.alt"
-                class="h-[13.5rem] w-full object-cover object-[center_72%] sm:h-[13.5rem]"
+                class="h-[13.5rem] w-full object-cover object-[center_55%] sm:h-[13.5rem]"
                 loading="lazy"
                 decoding="async"
               />

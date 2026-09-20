@@ -8,6 +8,7 @@ export default {
   },
   navigation: {
     retreat: 'Retreat 11 October',
+    retreatCta: 'Group retreat · 11 October',
     skipToContent: 'Skip to content',
     backToTop: 'Back to the top',
     main: 'Main navigation',
@@ -42,9 +43,9 @@ export default {
     text:
       'Whether you seek a place to recharge, are looking for clarity, or perhaps you are simply curious – you are warmly welcome here.',
     imageAlts: {
-      main: 'A quiet encounter – closeness and presence with a horse.',
+      main: 'A pinto horse lowers its head towards a woman on a treatment table.',
       bodywork: 'Holistic energy and bodywork in a calm connection with a horse.',
-      pasture: 'Holistic energy and bodywork with horses in the pasture.',
+      pasture: 'Judith guides a session at a treatment table, surrounded by horses.',
     },
   },
   offers: {

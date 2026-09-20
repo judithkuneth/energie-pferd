@@ -29,7 +29,7 @@ const { t } = useI18n()
       <HeroSection @book="siteHeader?.openBooking()" />
       <AboutSection />
       <VibeGallerySection />
-      <OffersSection />
+      <OffersSection @book="siteHeader?.openBooking()" />
       <ContactSection @book="siteHeader?.openBooking()" />
       <NewsletterSection />
     </main>

@@ -96,7 +96,13 @@ const { t } = useI18n()
           Pferdegestützte Begleitung und Energiearbeit begleitet von der heilenden Kraft der Pferde.
         </p> -->
 
-        <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <div class="mt-10 flex flex-col gap-3 md:flex-row md:items-center">
+          <RouterLink
+            to="/retreat"
+            class="inline-flex items-center justify-center gap-3 rounded-full bg-primary-500 px-6 py-3 text-sm font-semibold text-sand-50 no-underline transition hover:bg-primary-600 md:hidden"
+          >
+            {{ t('navigation.retreatCta') }} <span aria-hidden="true">↗</span>
+          </RouterLink>
           <!-- <PrimaryButton href="#angebote">Angebote entdecken</PrimaryButton> -->
           <PrimaryButton variant="ghost" @click="emit('book')">
             {{ t('hero.booking') }}
