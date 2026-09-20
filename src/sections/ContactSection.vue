@@ -107,6 +107,10 @@ const { t } = useI18n()
                   {{ t('contact.location') }}
                 </span>
               </a>
+              <div class="flex flex-col gap-1 rounded-xl border border-taupe-200/60 bg-white/60 px-4 py-3 text-left font-medium text-taupe-900 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                <span>{{ t('contact.secondLocation') }}</span>
+                <span class="text-taupe-700 sm:text-right">{{ t('contact.secondAddress') }}</span>
+              </div>
             </div>
             <p class="text-left text-xs leading-relaxed text-taupe-600">
               {{ t('contact.addressNote') }}

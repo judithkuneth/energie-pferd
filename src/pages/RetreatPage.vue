@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import RetreatBookingModal from '@/components/RetreatBookingModal.vue'
+const bookingOpen = ref(false)
 import SiteFooter from '@/sections/SiteFooter.vue'
 import logoMark from '@/assets/brand/energie-pferd-mark-128.png'
 
@@ -57,9 +60,7 @@ const experiences = [
         </RouterLink>
         <nav aria-label="Retreat-Navigation">
           <a href="#begleitung" class="guide-link">Deine Begleiterinnen</a>
-          <a href="#anmeldung" class="retreat-button small"
-            >Platz sichern <span aria-hidden="true">↗</span></a
-          >
+          <button type="button" class="retreat-button small" @click="bookingOpen = true">Platz sichern <span aria-hidden="true">↗</span></button>
         </nav>
       </div>
     </header>
@@ -81,9 +82,7 @@ const experiences = [
           <p class="hero-copy">
             Ein Tag zum Ankommen, Spüren und Sein im Raum der Pferde.
           </p>
-          <a href="#anmeldung" class="retreat-button light"
-            >Platz sichern <span aria-hidden="true">↗</span></a
-          >
+          <button type="button" class="retreat-button light" @click="bookingOpen = true">Platz sichern <span aria-hidden="true">↗</span></button>
           <p class="hero-date">
             11. Oktober 2026 <span aria-hidden="true">·</span> Blåsehof, Kärnten
           </p>
@@ -233,11 +232,7 @@ const experiences = [
               persönlich bei Judith <a href="tel:+4367683555785">+43 676/83 555 785</a>
               oder Sabine <a href="tel:+4369910751170">+43 699/10 75 11 70</a>.
             </p>
-            <a
-              href="tel:+4367683555785"
-              class="retreat-button light booking-cta"
-              aria-label="Platz sichern – Judith zur Anmeldung anrufen"
-            >Platz sichern <span aria-hidden="true">↗</span></a>
+            <button type="button" class="retreat-button light booking-cta" @click="bookingOpen = true">Platz sichern <span aria-hidden="true">↗</span></button>
           </div>
           <div class="booking-details">
             <p class="eyebrow">Alles auf einen Blick</p>
@@ -256,6 +251,12 @@ const experiences = [
                   € 280<br /><span
                     >Inklusive vegetarischem Bio-Mittagessen & Snacks</span
                   >
+                  <p class="mt-3 text-xs leading-relaxed">Mit deiner Anmeldung buchst du verbindlich. Dein Platz ist nach Erhalt der Buchungsbestätigung für dich reserviert. Bitte überweise 280 € innerhalb von 48 Stunden.</p>
+                  <div class="mt-3 text-xs leading-relaxed">
+                    <p class="font-medium">Stornoregelung</p>
+                    <p>Bis 30 Tage vorher: kostenfrei. 29 bis 14 Tage vorher: 50 % Stornokosten. Ab 13 Tage vorher oder bei Nichterscheinen: 100 % Stornokosten. Eine Übertragung des Platzes ist nach Absprache kostenfrei möglich.</p>
+                    <a href="/retreat/bedingungen" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block underline">Alle Buchungs- &amp; Stornobedingungen ↗</a>
+                  </div>
                 </dd>
               </div>
               <div>
@@ -278,6 +279,7 @@ const experiences = [
       </section>
     </main>
     <SiteFooter />
+    <RetreatBookingModal :open="bookingOpen" @close="bookingOpen = false" />
   </div>
 </template>
 

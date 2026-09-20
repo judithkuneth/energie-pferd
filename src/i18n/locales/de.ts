@@ -7,6 +7,7 @@ export default {
     close: 'Schließen'
   },
   navigation: {
+    retreat: 'Retreat 11. Oktober',
     skipToContent: 'Zum Inhalt springen',
     backToTop: 'Zurück nach oben',
     main: 'Hauptnavigation',
@@ -54,6 +55,13 @@ export default {
     inquire: 'Unverbindlich anfragen',
     closeTip: 'Tipp: Klick außerhalb schließt das Fenster.',
     items: {
+      groupRetreat: {
+        date: '11. Oktober 2026',
+        capacity: 'Max. 6 Teilnehmer:innen',
+        title: 'Gruppenretreat',
+        description: 'Ein Tag zum Ankommen, Spüren und Sein – mit den Pferden, in der Natur und in einer kleinen Gruppe. Liebevoll begleitet von Judith und Sabine am Blåsehof.',
+        note: '11. Oktober 2026 · Max. 6 Teilnehmer:innen',
+      },
       bodywork: {
         title: 'Körper- & Energiearbeit',
         description:
@@ -118,7 +126,9 @@ export default {
     email: 'E-Mail',
     address: 'Adresse*',
     location: '9555 Glanegg, Kärnten · rund 20 Minuten von Klagenfurt',
-    addressNote: '* Die genaue Adresse erhältst du nach der Terminvereinbarung.',
+    addressNote: '* Die genaue Adresse in Glanegg erhältst du nach der Terminvereinbarung. Sessions sind in Glanegg und am Blåsehof möglich – den Ort stimmen wir gemeinsam ab.',
+    secondLocation: 'Blåsehof',
+    secondAddress: 'Arndorf 6, A-9063 Maria Saal',
     travelNote: 'Begleitung an anderen Orten ist nach Absprache möglich.',
     portraitAlt: 'Portrait in der Natur.'
   },
@@ -235,6 +245,10 @@ export default {
     updated: 'Stand: August 2026'
   },
   seo: {
+    retreatTermsTitle: 'Buchungs- und Stornobedingungen – Energie Pferd',
+    retreatTermsDescription: 'Bedingungen für Anmeldung, Stornierung und Absage des Pferdemagie-Retreats.',
+    retreatSuccessTitle: 'Danke für deine Retreat-Anmeldung – Energie Pferd',
+    retreatSuccessDescription: 'Deine Angaben für das Tagesretreat am Blåsehof wurden übermittelt.',
     retreatTitle: 'Tagesretreat mit Pferden · 11. Oktober 2026 – Energie Pferd',
     retreatDescription:
       'Ein Tag für dich am Blåsehof: Pferdebegegnungen, Körperarbeit und Waldbaden mit Judith Kuneth und Sabine Dörfler. 11. Oktober 2026, 10 – 17 Uhr. Maximal 6 Teilnehmer:innen.',

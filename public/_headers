@@ -7,6 +7,12 @@
 /newsletter-success
   X-Robots-Tag: noindex, nofollow
 
+/retreat/danke
+  X-Robots-Tag: noindex, nofollow
+
+/retreat/bedingungen
+  X-Robots-Tag: noindex, follow
+
 /en/legal-notice
   X-Robots-Tag: noindex, follow
 

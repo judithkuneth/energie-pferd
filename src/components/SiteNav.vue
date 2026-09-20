@@ -63,7 +63,7 @@ function openBooking() {
         class="hidden items-center gap-6 md:flex"
         :aria-label="t('navigation.main')"
       >
-        <RouterLink to="/retreat" class="text-sm font-medium text-taupe-700 no-underline transition hover:text-taupe-900">Retreat</RouterLink>
+        <RouterLink to="/retreat" class="whitespace-nowrap text-sm font-semibold text-primary-600 no-underline transition hover:text-taupe-900">{{ t('navigation.retreat') }}</RouterLink>
         <RouterLink
           v-for="item in items"
           :key="item.hash"
@@ -143,7 +143,7 @@ function openBooking() {
       "
     >
       <div class="container-page flex flex-col gap-2 pb-4">
-        <RouterLink to="/retreat" class="rounded-xl px-3 py-2 text-sm font-medium text-taupe-800 no-underline hover:bg-white/70" @click="close">Retreat</RouterLink>
+        <RouterLink to="/retreat" class="rounded-xl bg-sage-200/45 px-3 py-2 text-sm font-semibold text-primary-600 no-underline hover:bg-white/70" @click="close">{{ t('navigation.retreat') }}</RouterLink>
         <RouterLink
           v-for="item in items"
           :key="item.hash"

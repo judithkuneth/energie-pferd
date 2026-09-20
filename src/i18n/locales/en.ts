@@ -7,6 +7,7 @@ export default {
     close: 'Close',
   },
   navigation: {
+    retreat: 'Retreat 11 October',
     skipToContent: 'Skip to content',
     backToTop: 'Back to the top',
     main: 'Main navigation',
@@ -57,6 +58,13 @@ export default {
     inquire: 'Send an enquiry',
     closeTip: 'Tip: Click outside the window to close it.',
     items: {
+      groupRetreat: {
+        date: '11 October 2026',
+        capacity: 'Max. 6 participants',
+        title: 'Group Retreat',
+        description: 'A day to arrive, feel and simply be – with horses, in nature and in a small group. Gently guided by Judith and Sabine at Blåsehof. Details in German.',
+        note: '11 October 2026 · Max. 6 participants',
+      },
       bodywork: {
         title: 'Holistic energy & bodywork',
         description:
@@ -121,7 +129,9 @@ export default {
     email: 'Email',
     address: 'Location*',
     location: '9555 Glanegg, Carinthia · around 20 minutes from Klagenfurt',
-    addressNote: '* You will receive the exact address after arranging your appointment.',
+    addressNote: '* You will receive the exact address in Glanegg after arranging your appointment. Sessions are available in Glanegg and at Blåsehof – we will agree on the location together.',
+    secondLocation: 'Blåsehof',
+    secondAddress: 'Arndorf 6, A-9063 Maria Saal',
     travelNote: 'Sessions and retreats in other locations are available by arrangement.',
     portraitAlt: 'Portrait in nature.',
   },

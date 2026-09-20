@@ -204,6 +204,29 @@ function closeOffer() {
             </div>
           </div>
         </RevealOnScroll>
+        <RevealOnScroll :delay-ms="offers.length * 70" class="h-full">
+          <RouterLink
+            to="/retreat"
+            class="group flex h-full flex-col rounded-2xl border border-primary-500/45 bg-sage-200/45 p-6 text-left no-underline transition hover:-translate-y-1 hover:border-primary-500 hover:ring-1 hover:ring-primary-500/25"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="font-serif text-xl font-semibold tracking-tight text-taupe-900">
+                {{ t('offers.items.groupRetreat.title') }}
+              </h3>
+              <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-taupe-200/70 bg-sand-100/70 text-taupe-700 transition group-hover:border-primary-500/45 group-hover:bg-sand-50 group-hover:text-primary-600" aria-hidden="true">↗</span>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-taupe-700">
+              {{ t('offers.items.groupRetreat.description') }}
+            </p>
+            <div class="pt-6">
+              <div class="hairline" />
+              <div class="mt-4 flex flex-wrap items-center gap-3">
+                <span class="rounded-full bg-primary-600 px-3 py-1.5 text-xs font-semibold text-white">{{ t('offers.items.groupRetreat.date') }}</span>
+                <span class="text-xs font-medium text-taupe-700">{{ t('offers.items.groupRetreat.capacity') }}</span>
+              </div>
+            </div>
+          </RouterLink>
+        </RevealOnScroll>
       </div>
 
       <Teleport to="body">

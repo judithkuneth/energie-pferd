@@ -12,6 +12,32 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/retreat/bedingungen',
+      name: 'retreat-terms-de',
+      component: () => import('@/pages/RetreatTermsPage.vue'),
+      meta: {
+        locale: 'de',
+        routeKey: 'retreat-terms',
+        titleKey: 'seo.retreatTermsTitle',
+        descriptionKey: 'seo.retreatTermsDescription',
+        robots: 'noindex, follow',
+        canonicalPath: '/retreat/bedingungen',
+      },
+    },
+    {
+      path: '/retreat/danke',
+      name: 'retreat-success-de',
+      component: () => import('@/pages/RetreatSuccessPage.vue'),
+      meta: {
+        locale: 'de',
+        routeKey: 'retreat-success',
+        titleKey: 'seo.retreatSuccessTitle',
+        descriptionKey: 'seo.retreatSuccessDescription',
+        robots: 'noindex, nofollow',
+        canonicalPath: '/retreat/danke',
+      },
+    },
+    {
       path: '/retreat',
       name: 'retreat-de',
       component: () => import('@/pages/RetreatPage.vue'),
