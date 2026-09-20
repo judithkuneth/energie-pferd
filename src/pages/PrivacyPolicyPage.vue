@@ -81,6 +81,17 @@
             </p>
           </section>
 
+          <section id="retreat-anmeldung" class="scroll-mt-24">
+            <h2>{{ t('privacyPolicy.retreatTitle') }}</h2>
+            <p>{{ t('privacyPolicy.retreatP1') }}</p>
+            <p>{{ t('privacyPolicy.retreatP2') }}</p>
+            <p>{{ t('privacyPolicy.retreatP3') }}</p>
+            <p>
+              {{ t('privacyPolicy.retreatP4') }}
+              <a :href="brevoPrivacyUrl" target="_blank" rel="noopener">{{ t('privacyPolicy.brevoLink') }}</a>.
+            </p>
+          </section>
+
           <section id="cookies-and-tracking" class="scroll-mt-24">
             <h2>{{ t('privacyPolicy.cookiesTitle') }}</h2>
             <p>{{ t('privacyPolicy.cookiesP1') }}</p>

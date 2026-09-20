@@ -229,11 +229,16 @@ export default {
     brevoP2:
       'The legal basis is your consent under Article 6(1)(a) GDPR. You may withdraw this consent at any time with effect for the future, in particular by using the unsubscribe link in every email. Brevo processes the data as a processor. According to the provider, Brevo databases are operated within the European Union. Further information is available in the',
     brevoLink: 'Brevo privacy policy',
+    retreatTitle: '5a. Retreat registration through Brevo',
+    retreatP1: 'Brevo is used for one-off retreat registration. When you submit the form, your full name, telephone number, email address and acceptance of the booking and cancellation conditions are transmitted to Brevo. Technically necessary connection data is also processed.',
+    retreatP2: 'Your details are used exclusively to process and administer your registration for this retreat and for related communication. Retreat registration does not use double opt-in; no additional email confirmation through a confirmation link is required. Registering for the retreat does not subscribe you to the newsletter. This registration does not authorise general advertising or offers for future retreats.',
+    retreatP3: 'Registration and contract administration are processed under Article 6(1)(b) GDPR. Accepting the booking conditions is not consent to receive a newsletter. Data is deleted or anonymised once no longer needed to administer this retreat, unless statutory retention obligations apply. Where such obligations apply, further retention is based on Article 6(1)(c) GDPR.',
+    retreatP4: 'Brevo acts as a processor for the technical transmission and administration of retreat registrations. Further information is available in the',
     cookiesTitle: '6. Cookies and website tracking',
     cookiesP1:
       'Simply visiting this website does not set any analytics or marketing cookies and no web analytics or advertising tracking is used. This is why no consent banner is displayed.',
     cookiesP2:
-      'Data is only transmitted to the respective service provider when you actively use the Zeeg appointment booking described in section 4 or the Brevo newsletter sign-up described in section 5. Technically necessary security or session technologies may be used in this process.',
+      'Data is only transmitted to the respective service provider when you actively use Zeeg appointment booking in section 4, Brevo newsletter sign-up in section 5 or Brevo retreat registration in section 5a. Technically necessary security or session technologies may be used in this process.',
     externalTitle: '7. External links',
     externalP1:
       'This website contains links to external services, in particular Instagram, WhatsApp, Zeeg and Brevo. The respective provider’s privacy policy applies only after you follow such a link. The respective operator is responsible for its content and data processing.',
@@ -248,7 +253,7 @@ export default {
     securityTitle: '10. Security and updates',
     securityP1:
       'This website uses an encrypted connection when it is provided over HTTPS. This privacy policy will be updated if the website, the services used or the legal requirements change.',
-    updated: 'Last updated: August 2026',
+    updated: 'Last updated: September 2026',
   },
   seo: {
     homeTitle: 'Horse-Guided Retreats & Bodywork in Austria | Energie Pferd',

@@ -224,11 +224,16 @@ export default {
     brevoP2:
       'Rechtsgrundlage ist deine Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Du kannst diese jederzeit mit Wirkung für die Zukunft widerrufen, insbesondere über den Abmeldelink in jeder E-Mail. Brevo verarbeitet die Daten als Auftragsverarbeiter. Die Datenbanken von Brevo werden nach Angaben des Anbieters innerhalb der Europäischen Union betrieben. Weitere Informationen findest du in der',
     brevoLink: 'Datenschutzerklärung von Brevo',
+    retreatTitle: '5a. Retreat-Anmeldung über Brevo',
+    retreatP1: 'Für die einmalige Anmeldung zum Retreat wird Brevo eingesetzt. Beim Absenden des Formulars werden dein Vor- und Nachname, deine Telefonnummer, deine E-Mail-Adresse und deine Zustimmung zu den Buchungs- und Stornobedingungen an Brevo übermittelt. Dabei fallen außerdem technisch erforderliche Verbindungsdaten an.',
+    retreatP2: 'Die Angaben werden ausschließlich zur Bearbeitung und Abwicklung deiner Anmeldung zu diesem Retreat sowie für die damit verbundene Kommunikation verwendet. Die Retreat-Anmeldung erfolgt ohne Double-Opt-in; eine zusätzliche Bestätigung deiner E-Mail-Adresse über einen Bestätigungslink ist hierfür nicht vorgesehen. Du wirst dadurch nicht für den Newsletter angemeldet. Eine Verwendung für allgemeine Werbung oder spätere Retreat-Angebote erfolgt nicht aufgrund dieser Anmeldung.',
+    retreatP3: 'Die Verarbeitung zur Anmeldung und Vertragsabwicklung erfolgt gemäß Art. 6 Abs. 1 lit. b DSGVO. Die Zustimmung zu den Buchungsbedingungen ist keine Newsletter-Einwilligung. Die Daten werden gelöscht oder anonymisiert, sobald sie für die Abwicklung dieses Retreats nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Soweit solche Pflichten bestehen, erfolgt die weitere Aufbewahrung gemäß Art. 6 Abs. 1 lit. c DSGVO.',
+    retreatP4: 'Brevo wird für die technische Übermittlung und Verwaltung der Retreat-Anmeldungen als Auftragsverarbeiter eingesetzt. Weitere Informationen findest du in der',
     cookiesTitle: '6. Cookies und Website-Tracking',
     cookiesP1:
       'Beim bloßen Besuch dieser Website werden keine Analyse- oder Marketing-Cookies gesetzt und kein Webanalyse- oder Werbe-Tracking eingesetzt. Daher wird kein Einwilligungsbanner angezeigt.',
     cookiesP2:
-      'Erst wenn du die in Punkt 4 beschriebene Terminbuchung mit Zeeg oder die in Punkt 5 beschriebene Newsletter-Anmeldung mit Brevo aktiv nutzt, werden Daten an den jeweiligen Dienstleister übertragen. Dabei können technisch erforderliche Sicherheits- oder Sitzungstechnologien zum Einsatz kommen.',
+      'Erst wenn du die in Punkt 4 beschriebene Terminbuchung mit Zeeg, die Newsletter-Anmeldung in Punkt 5 oder die Retreat-Anmeldung in Punkt 5a mit Brevo aktiv nutzt, werden Daten an den jeweiligen Dienstleister übertragen. Dabei können technisch erforderliche Sicherheits- oder Sitzungstechnologien zum Einsatz kommen.',
     externalTitle: '7. Externe Links',
     externalP1:
       'Diese Website enthält Links zu externen Angeboten, insbesondere Instagram, WhatsApp, Zeeg und Brevo. Erst wenn du einen solchen Link aufrufst, gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Für deren Inhalte und Datenverarbeitung ist der jeweilige Betreiber verantwortlich.',
@@ -243,7 +248,7 @@ export default {
     securityTitle: '10. Sicherheit und Aktualisierung',
     securityP1:
       'Diese Website nutzt eine verschlüsselte Verbindung, sofern sie über HTTPS bereitgestellt wird. Die Datenschutzerklärung wird angepasst, wenn sich die Website, eingesetzte Dienste oder rechtliche Anforderungen ändern.',
-    updated: 'Stand: August 2026'
+    updated: 'Stand: September 2026'
   },
   seo: {
     retreatTermsTitle: 'Buchungs- und Stornobedingungen – Energie Pferd',

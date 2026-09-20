@@ -138,7 +138,7 @@ async function submit(event: Event) {
             <p class="privacy">
               Wir verwenden deine Angaben zur Bearbeitung deiner Retreat-Anmeldung. Die Übermittlung
               erfolgt über Brevo.
-              <a href="/privacy" target="_blank" rel="noopener noreferrer">Datenschutz</a>
+              <a href="/privacy#retreat-anmeldung" target="_blank" rel="noopener noreferrer">Datenschutz</a>
             </p>
             <label class="terms-consent">
               <input id="retreat-terms" name="OPT_IN" value="1" type="checkbox" required />
