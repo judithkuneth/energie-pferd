@@ -22,11 +22,6 @@ const impressions = [
 ]
 const experiences = [
   {
-    title: 'Horse Healing Session',
-    detail: 'Spüren & verbinden',
-    text: 'Zeit für Körperarbeit, achtsame Berührung und die Verbindung mit den Pferden.',
-  },
-  {
     title: 'Begegnungen in der Herde',
     detail: 'Präsent sein & wahrnehmen',
     text: 'Den Pferden begegnen und wahrnehmen, was sich im Hier und Jetzt zeigt.',
@@ -35,6 +30,11 @@ const experiences = [
     title: 'Waldbaden',
     detail: 'Eintauchen & ankommen',
     text: 'Langsamer werden, die Sinne öffnen und die Natur auf dich wirken lassen.',
+  },
+  {
+    title: 'Horse Healing Session',
+    detail: 'Spüren & verbinden',
+    text: 'Zeit für Körperarbeit, achtsame Berührung und die Verbindung mit den Pferden.',
   },
   {
     title: 'Sharing & Kreise',
