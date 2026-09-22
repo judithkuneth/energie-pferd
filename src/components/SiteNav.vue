@@ -143,6 +143,7 @@ function openBooking() {
       "
     >
       <div class="container-page flex flex-col gap-2 pb-4">
+        <RouterLink :to="homeLocation" class="rounded-xl px-3 py-2 text-sm font-medium text-taupe-800 no-underline hover:bg-white/70" @click="close">Home</RouterLink>
         <RouterLink to="/retreat" class="rounded-xl bg-sage-200/45 px-3 py-2 text-sm font-semibold text-primary-600 no-underline hover:bg-white/70" @click="close">{{ t('navigation.retreat') }}</RouterLink>
         <RouterLink
           v-for="item in items"

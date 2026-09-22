@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import RetreatBookingModal from '@/components/RetreatBookingModal.vue'
 const bookingOpen = ref(false)
 import SiteFooter from '@/sections/SiteFooter.vue'
-import logoMark from '@/assets/brand/energie-pferd-mark-128.png'
+import SiteHeader from '@/components/SiteHeader.vue'
 
 const heroImage = '/retreat/hero-sabine-1800.webp'
 const impressions = [
@@ -52,18 +52,7 @@ const experiences = [
 <template>
   <div class="retreat-page">
     <a class="skip-link" href="#retreat-content">Zum Inhalt springen</a>
-    <header class="retreat-header">
-      <div class="container-page header-inner">
-        <RouterLink to="/" class="retreat-brand" aria-label="Energie Pferd – zur Startseite">
-          <img :src="logoMark" alt="" width="42" height="42" />
-          <span class="brand-wordmark font-forum">Energie Pferd</span>
-        </RouterLink>
-        <nav aria-label="Retreat-Navigation">
-          <a href="#begleitung" class="guide-link">Deine Begleiterinnen</a>
-          <button type="button" class="retreat-button small" @click="bookingOpen = true">Platz sichern <span aria-hidden="true">↗</span></button>
-        </nav>
-      </div>
-    </header>
+    <SiteHeader />
 
     <main id="retreat-content">
       <section class="retreat-hero" aria-labelledby="retreat-title">
@@ -290,39 +279,6 @@ const experiences = [
   color: #353b33;
   background: #fdfcf9;
 }
-.retreat-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: #fdfcf9f5;
-  border-bottom: 1px solid #deded3;
-  backdrop-filter: blur(12px);
-}
-.header-inner,
-.retreat-brand,
-nav {
-  display: flex;
-  align-items: center;
-}
-.header-inner {
-  justify-content: space-between;
-  gap: 16px;
-  padding-block: 14px;
-}
-.retreat-brand {
-  gap: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 21px;
-  letter-spacing: 0.08em;
-}
-nav {
-  gap: 28px;
-  font-size: 13px;
-}
-nav a {
-  text-decoration: none;
-}
 .retreat-button {
   display: inline-flex;
   align-items: center;
@@ -339,10 +295,6 @@ nav a {
 }
 .retreat-button:hover {
   background: #3e6154;
-}
-.retreat-button.small {
-  padding: 11px 20px;
-  gap: 15px;
 }
 .retreat-button.light {
   background: #f7f4e9;
@@ -661,22 +613,6 @@ main[id] {
   top: 12px;
 }
 @media (max-width: 767px) {
-  .guide-link {
-    display: none;
-  }
-  .retreat-brand {
-    font-size: 17px;
-    gap: 6px;
-  }
-  .retreat-brand img {
-    width: 34px;
-    height: 34px;
-  }
-  .retreat-button.small {
-    padding: 10px 14px;
-    gap: 10px;
-    font-size: 12px;
-  }
   .retreat-hero {
     min-height: 600px;
   }
